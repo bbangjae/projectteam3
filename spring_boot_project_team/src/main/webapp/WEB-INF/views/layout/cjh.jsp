@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>이거 보이면 기분이 좋겠어</title>
 	</head>
 	<body>
 	
