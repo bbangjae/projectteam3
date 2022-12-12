@@ -25,7 +25,7 @@
 				<div id="prevNextButtonBox">
 					<img id="prevButton" src="image/prevButton.png"> <img
 						id="nextButton" src="image/nextButton.png">
-				</div>
+				</div> 
 				<!--  (2) 슬라이드 쇼 박스-->
 				<div id="slideShowBox">
 					<div id="slidePanel">
