@@ -14,11 +14,8 @@
 <body>
 	<div id="wrap">
 
-		  <c:import url="/WEB-INF/views/layout/top2.jsp" /> 
+		  <c:import url="/WEB-INF/views/layout/top.jsp" /> 
 
-
-		<!--  top -->         
-			<c:import url="/WEB-INF/views/layout/top.jsp" />
 	
 		<nav>
 		
