@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace= "com.spring_boot.projectTeam.dao.IBookInfoDAO_y">
+	<resultMap id="bookResult" type="com.spring_boot.projectTeam.model.BookInfoVO_b" >
+  		<result property="bookId"  column="bookId"  />
+  		<result property="memId"  column="memId"  />
+  		<result property="bookName"  column="bookName"  />
+  		<result property="bookAuthor"  column="bookAuthor"  />
+  		<result property="bookPublish"  column="bookPublish"  />
+  		<result property="bookPrice"  column="bookPrice"  />
+  		<result property="bookDate"  column="bookDate"  />
+  		<result property="bookctg"  column="bookctg"  />
+  		<result property="bookImg"  column="bookImg"  />
+  		<result property="bookDis"  column="bookDis"  />
+  	</resultMap>
+  	
+	<!-- 전체 상품 조회 -->
+	<select id="listAllBook" resultMap="bookResult">
+		SELECT * FROM bookInfo ORDER BY bookId
+	</select>
+
+  
+</mapper>

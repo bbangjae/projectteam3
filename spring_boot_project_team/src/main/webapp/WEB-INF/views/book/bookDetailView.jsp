@@ -27,7 +27,7 @@
 	  			</h1>
 	  			<div id="pfContent">
 	  				<ul>
-		  				<li><p class="ID">이구역에서 내가짱</p></li> <!-- !!id들고오기 -->
+		  				<li><p class="ID">${bk.memId}</p></li> <!-- !!id들고오기 -->
 		  				<li><p>서울시 용산구</p></li> <!-- !!!지역 -->
 	  				</ul>
   				</div>
@@ -39,9 +39,9 @@
   	<section>
   		<article id="contentBF">
   			<table id="cTable" >
-  				<tr><th>대시보드 설계와 데이터 시각화</th></tr>
+  				<tr><th>${bk.bookName} </th></tr>
   				<tr><td class="c1">4시간전</td></tr>
-  				<tr><td rowspan="3">이걸 안봐??<br>짱잼 보장!!!<br><br><br></td></tr>
+  				<tr><td rowspan="3">${bk.bookDis }<br><br></td></tr>
   				<tr><td></td></tr>
   				<tr><td></td></tr>
   				<tr><td class="c1">좋아요:32채팅:3조회:224</td></tr>
