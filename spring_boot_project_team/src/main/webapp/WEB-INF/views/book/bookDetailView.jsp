@@ -22,12 +22,13 @@
   			
   			<div id="profile">
   				<h1 id="pLogo">
+  					<!-- 이름 -->
 	  				<img  src="/image/홍길동.png" width=50px; height=50px; class="profile">
 	  			</h1>
 	  			<div id="pfContent">
 	  				<ul>
-		  				<li><p class="ID">이구역에서 내가짱</p></li>
-		  				<li><p>서울시 용산구</p></li>
+		  				<li><p class="ID">이구역에서 내가짱</p></li> <!-- !!id들고오기 -->
+		  				<li><p>서울시 용산구</p></li> <!-- !!!지역 -->
 	  				</ul>
   				</div>
   			</div>
