@@ -10,14 +10,4 @@ public class HomeController {
 	public String index() {
 		return "index";
 	}
-
-	@RequestMapping("/month/monthform")
-	public String monthform() {
-		return "/month/monthform";
-	}
-	@RequestMapping("/mypage/mypageform")
-	public String mypageform() {
-		return "/mypage/mypageform";
-	}
-
 }
