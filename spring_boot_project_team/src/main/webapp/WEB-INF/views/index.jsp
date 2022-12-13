@@ -13,7 +13,45 @@
 </head>
 <body>
 	<div id="wrap">
+
 		  <c:import url="/WEB-INF/views/layout/top2.jsp" /> 
+
+
+		<!--  top -->         
+			<c:import url="/WEB-INF/views/layout/top.jsp" />
+	
+		<nav>
+		
+			<article id="slideshow">
+
+				<!--  (1) prevNext 버튼 박스 -->
+				<div id="prevNextButtonBox">
+					<img id="prevButton" src="image/prevButton.png"> <img
+						id="nextButton" src="image/nextButton.png">
+				</div> 
+				<!--  (2) 슬라이드 쇼 박스-->
+				<div id="slideShowBox">
+					<div id="slidePanel">
+						<img src="image/slidebook1.jpg" class="slideImage"> 
+						<img src="image/slidebook2.jpg" class="slideImage">
+						<img src="image/slidebook3.jpg" class="slideImage">
+					</div>
+					<!-- slidePanel 끝 -->
+				</div>
+				<!-- slideShowBox 끝 -->
+				<!-- (3) 컨트롤 버튼 -->
+				<div id="controlButtonBox">
+					<!-- 대여,이달의책 후기 -->
+					<img src="image/controlButton1.png" class="controlButton"> 
+					<img src="image/controlButton1.png" class="controlButton"> 
+					<img src="image/controlButton1.png" class="controlButton">
+
+				</div>
+			</article>
+
+		</nav>
+		<!-- ********** nav 부분 끝 ********* -->
+
 		<section>
 			
 				<div id="productBox">

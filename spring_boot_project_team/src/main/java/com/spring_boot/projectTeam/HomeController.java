@@ -10,6 +10,7 @@ public class HomeController {
 	public String index() {
 		return "index";
 	}
+
 	@RequestMapping("/month/monthform")
 	public String monthform() {
 		return "/month/monthform";
@@ -18,8 +19,5 @@ public class HomeController {
 	public String mypageform() {
 		return "/mypage/mypageform";
 	}
-	
-	
-	
-	
+
 }
