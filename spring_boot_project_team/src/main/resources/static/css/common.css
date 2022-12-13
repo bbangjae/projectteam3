@@ -57,6 +57,7 @@ body{
    position:relative;
    border:solid 1px white;
    height:580px;
+   margin:0 auto;
    
 }
 #tab{
