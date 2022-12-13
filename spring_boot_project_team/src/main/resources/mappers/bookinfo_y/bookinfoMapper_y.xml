@@ -21,5 +21,6 @@
 	<select id="listAllBook" resultMap="bookResult">
 		SELECT * FROM bookInfo ORDER BY bookId
 	</select>
+
   
 </mapper>

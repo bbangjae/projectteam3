@@ -2,6 +2,8 @@ package com.spring_boot.projectTeam.model;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class BookInfoVO_b {
 	private String bookId;
 	private String memId;
@@ -9,6 +11,7 @@ public class BookInfoVO_b {
 	private String bookAuthor;
 	private String bookPublish;
 	private int bookPrice;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date bookDate;
 	private String bookctg;
 	private String bookImg;

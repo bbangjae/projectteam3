@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+#listHeader {
+	margin: 0px auto;
+	width: 1000px;
+	height: 50px;
+	line-height: 50px;
+}
+
+#listBook {
+	width: 1000px;
+	height: 520px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#pNButtonBox {
+	position: relative;
+	z-index: 10;
+}
+
+#pButton {
+	position: absolute;
+	top: 210px;
+	left: 4%;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#nButton {
+	position: absolute;
+	top: 210px;
+	right: 4%;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#listPanel {
+	position: relative;
+	width: 2000px;
+	height: 480px;
+}
+
+#bookSlide {
+	float: left;
+	width: 1000px;
+	height: 360px;
+}
+
+#newBook {
+	width: 1000px;
+	height: 480px;
+}
+
+.listB {
+	width: 250px;
+	height: 360px;
+	float: left;
+}
+
+.booklist {
+	width: 180px;
+	height: 230px;
+	margin: 30px 35px 10px 35px;
+	line-height: 1.2;
+}
+
+#listExplain {
+	width: 230px;
+	height: 70px;
+	font-size: 15px;
+	color: rgb(40, 40, 40);
+	display: inline-block;
+}
+
+#listExplain p {
+	width: 200px;
+	margin: 10px;
+	color: rgba(110, 70, 40, 0.8);
+	font-size: 14px;
+	text-align: center;
+}
+
+#listExplain h1 {
+	width: 200px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.prtext h1{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

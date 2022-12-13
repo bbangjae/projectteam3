@@ -97,7 +97,7 @@
 							</div>
 						</div>
 						<div id="bookslot1">
-							<a href="rentalpage/데이터.html">
+							<a href="<c:url value='/book/bookDetailView/${데이터}'/>">
 							<img src="image/데이터.jfif" class="booklist"></a>
 							<div id="listExplain" class="prtext">
 								<h1>
