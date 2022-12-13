@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+#logo{
+    margin:0;
+    float:left;
+}
+
+#logoBox{
+    float:left;
+    
+}
+#logoBox  ul {
+	display:inline-block;
+	
+	
+}
+#logoBox .menuBox{
+	display:inline-block;
+	margin-right:450px;
+	
+}
+#logoBox  ul  li{
+   	
+    display:inline-block
+}
+
+#logoBox  ul  li  a{
+    font-size:20px;
+    color:black;
+    font-weight: bold;
+    width:80px;
+    display:inline-block;
+    margin-top:50px;
+    text-decoration: none;
+    
+    
+    
+}
+#logoBox  ul .menuBox1{
+	float:left;
+	margin:10px 0 0 0;
+	font-size:30px;
+	width:90px;
+	color:rgb(92, 51, 35);
+}
+#logoBox  ul .menuBox2{
+	float:left;
+	margin:10px 0 0 0;
+	font-size:30px;
+	width:150px;
+}

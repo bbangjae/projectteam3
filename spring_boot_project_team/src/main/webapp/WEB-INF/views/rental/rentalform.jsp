@@ -6,11 +6,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>대여 페이지</title>
-	<link rel="stylesheet" type="text/css" href='<c:url value="/css/menu.css"/>'>
-	<link rel="stylesheet" type="text/css" href='<c:url value="/css/product.css"/>'>
-	<link rel="stylesheet" type="text/css" href='<c:url value="/css/index.css"/>'>
-	<link rel="stylesheet" type="text/css" href='<c:url value="/css/common.css"/>'>
-	<link rel="stylesheet" type="text/css" href='<c:url value="/css/footer.css"/>'>
+	<link rel="stylesheet" type="text/css" href='<c:url value="/css/rental/menu.css"/>'>
+	<link rel="stylesheet" type="text/css" href='<c:url value="/css/rental/product.css"/>'>
+	<link rel="stylesheet" type="text/css" href='<c:url value="/css/rental/index.css"/>'>
+	<link rel="stylesheet" type="text/css" href='<c:url value="/css/rental/common.css"/>'>
+	<link rel="stylesheet" type="text/css" href='<c:url value="/css/rental/footer.css"/>'>
+	<link rel="stylesheet" type="text/css" href='<c:url value="/css/rental/header.css"/>'>
+	
 
 	<script src="jquery-3.6.1.min.js"></script>
 	
@@ -39,13 +41,7 @@
 				</div>
 			</header>
 		<section>
-			<!-- <div id="zBox"> -->
-				<!-- <div id="searchBox">
-					<input type="text" class="form-text" placeholder="도서검색">
-					<button id="searchimg">
-						<img src="image/search.png">
-					</button>
-				</div> -->
+			
 				<div id="productBox">
 					<div class="product">
 						<hr>

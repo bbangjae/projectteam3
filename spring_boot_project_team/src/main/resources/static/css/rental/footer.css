@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+ 
+
+
+
+.bottomMenuBox {
+	position:absolute;
+	text-align:center;
+	height:100px;
+	background-color:rgb(174, 165, 157);
+	z-index:1000;
+}
+
+.bottomMenuBox ul li{
+   
+   display:inline-block;
+   text-align:center;
+   padding:5px;
+   margin:20px;
+   z-index:1000;
+   
+   
+}
+
+.bottomMenuBox ul li a{
+   color:black;
+   font-weight:bold;
+   text-decoration:none;
+   z-index:1000;
+}
+
+
+.bottomMenuBox li img{
+   margin-left:10px;
+   width:20px;
+   height:20px;
+   background-color:rgb(174, 165, 157);
+   z-index:1000;
+}

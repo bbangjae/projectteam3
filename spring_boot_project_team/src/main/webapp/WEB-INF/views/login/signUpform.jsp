@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>회원가입</title>
-		<link rel="stylesheet" type="text/css" href='<c:url value="/css/login.css"/>'>
+		<link rel="stylesheet" type="text/css" href='<c:url value="/css/login/login.css"/>'>
 		<script src='<c:url value="/js/login_signup.js"/>'></script>
 		<script type="text/javascript">
 		
