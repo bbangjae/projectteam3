@@ -5,297 +5,114 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>독서관</title>
-	
+	<title>대여 페이지</title>
 	<c:import url="/WEB-INF/views/layout/head.jsp" />
+<style type="text/css">
 
+</style>
 </head>
-
 <body>
 	<div id="wrap">
-
-		<!--  top -->         
-			<c:import url="/WEB-INF/views/layout/top.jsp" />
-	
-		<nav>
-		
-			<article id="slideshow">
-
-				<!--  (1) prevNext 버튼 박스 -->
-				<div id="prevNextButtonBox">
-					<img id="prevButton" src="image/prevButton.png"> <img
-						id="nextButton" src="image/nextButton.png">
-				</div>
-				<!--  (2) 슬라이드 쇼 박스-->
-				<div id="slideShowBox">
-					<div id="slidePanel">
-						<img src="image/slidebook1.jpg" class="slideImage"> 
-						<img src="image/slidebook2.jpg" class="slideImage">
-						<img src="image/slidebook3.jpg" class="slideImage">
-					</div>
-					<!-- slidePanel 끝 -->
-				</div>
-				<!-- slideShowBox 끝 -->
-				<!-- (3) 컨트롤 버튼 -->
-				<div id="controlButtonBox">
-					<!-- 대여,이달의책 후기 -->
-					<img src="image/controlButton1.png" class="controlButton"> 
-					<img src="image/controlButton1.png" class="controlButton"> 
-					<img src="image/controlButton1.png" class="controlButton">
-
-				</div>
-			</article>
-
-		</nav>
-		<!-- ********** nav 부분 끝 ********* -->
+		  <c:import url="/WEB-INF/views/layout/top2.jsp" /> 
 		<section>
 			
-			
-			<article id="bookLent" >
+				<div id="productBox">
+					<div class="product">
+						<hr>
+						<div>
+							<a href="../rentalpage/리액트.html"><img src='<c:url value="/image/리액트.jfif"/>'></a>
+							<p class="prtext">
+								제목:처음 만난 리액트<br>출판사:한빛미디어<br>지은이:이인제<br> 내용:리액트
+								기초 개념을 배우고 간단한 실습을 따라 하며 <br>사용법을 익히는 가장 쉬운 입문서
+							</p>
+						</div>
+						<hr>
+						<div>
+							<a href="../rentalpage/알고리즘.html"><img src='<c:url value="/image/알고리즘.jfif"/>'></a>
+							<p class="prtext">
+								제목:자료구조와 함께 배우는 알고리즘 입문(자바 편)<br> 출판사:이지스퍼블리싱<br>지은이:BohYoh
+								Shibata<br> 내용:기업 코딩 테스트와 모든 시험의 기초가 되는 ‘자료구조와 알고리즘’!
+							</p>
+						</div>
+						<hr>
+						<div>
+							<a href="../rentalpage/자바웹.html"><img src='<c:url value="/image/자바웹.jfif"/>'></a>
+							<p class="prtext">
+								제목:자바 웹을 다루는 기술<br> 출판사:길벗<br>지은이:이병승<br>내용:JSP와
+								서블릿은 자바 웹 개발에서<br> 가장 중요하고도 기본이 되는 내용이다.
+							</p>
+						</div>
+						<hr>
+						<div>
+							<a href="../rentalpage/서비스.html"><img src='<c:url value="/image/서비스.jfif"/>'></a>
+							<p class="prtext">
+								제목:서비스 기획 스쿨<br>출판사:초록비책공방<br> 지은이:이미준<br>내용:사수도,
+								교재도, 물어볼 선배조차 없어 답답하던 서비스 기획!<br> 랜선 사수 ‘도그냥’의 리얼한 실무 프로세스를
+								파헤친다.
+							</p>
+						</div>
+						<hr>
+						<div>
+							<a href="../rentalpage/MY.html"><img src='<c:url value="/image/MYSQL.jfif"/>'></a>
+							<p class="prtext">
+								제목:이것이MySQL이다<br>출판사:한빛미디어<br> 지은이:우재남<br>내용:‘파이썬
+								기초 및 파이썬과 데이터베이스의 연동’ ,<br>‘ 파이썬으로 공간 데이터 응용 프로그래밍 작성하기’
+							</p>
+						</div>
+						<hr>
+						<div>
+							<a href="../rentalpage/데이터.html"><img src='<c:url value="/image/데이터.jfif"/>'></a>
+							<p class="prtext">
+								제목:대시보드 설계와 데이터 시각화<br>출판사:책만<br> 지은이:스티브 웩슬러<br>내용:이
+								책에서는 비즈니스 시나리오별로 실용적이면서도 아름다운<br> 대시보드 설계와 제작 방법을 알려주며 분석과
+								대안까지 제시한다.
+							</p>
+						</div>
+						<hr>
+						<div>
+							<a href="../rentalpage/자바.html"><img src='<c:url value="/image/자바.jfif"/>'></a>
+							<p class="prtext">
+								제목:자바의 정석<br>출판사:도우출판<br>지은이:남궁성 <br>내용:최근 7년동안
+								자바 분야의 베스트 셀러 1위를 지켜온<br> '자바의 정석'의 최신판.
+							</p>
+						</div>
+						<hr>
+						<div>
+							<a href="../rentalpage/자바스크립트.html"><img src='<c:url value="/image/자바스크립트.jfif"/>'></a>
+							<p class="prtext">
+								제목:모던 자바스크립트 입문<br>출판사:길벗<br> 지은이:이소 히로시<br>내용:ES6로
+								배우는 모던 자바스크립트 입문
+							</p>
+						</div>
+						<hr>
+						<div>
+							<a href="../rentalpage/미움.html"><img src='<c:url value="/image/미움.jfif"/>'></a>
+							<p class="prtext">
+								제목:미움받을용기<br>출판사:인플루엔셜<br> 지은이:기시미 이치로<br>내용:자유롭고
+								행복한 삶을 위한 아들러의 가르침
+							</p>
+
+
+						</div>
+						<hr>
+						<div>
+							<a href="../rentalpage/혼공.html"><img src='<c:url value="/image/혼공.jfif"/>'></a>
+							<p class="prtext">
+								제목:혼자 공부하는 시간의 힘<br>출판사:웅진지식하우스<br> 지은이:책 읽는 원숭이<br>내용:자기
+								성장을 위한 안내서<br>배움을 포기하지 않은 사람들에게
+
+							</p>
+						</div>
+						<hr>
+					</div>
+
 				
-				<div id="bookheader">
-					<h3>
-						<a href="rental/rental.html">내 주변 인기 도서 </a>
-					</h3>
-				</div>
-				<div id="Book">
-
-					<div id="bookslot">
-
-						<div id="bookslot1">
-							<a href="rentalpage/MY.html">
-							<img src="image/MYSQL.jfif" class="booklist"></a>
-							<div id="listExplain" class="prtext">
-								<h1>
-									이것이MySQL이다<br>
-								</h1>
-								<p>
-									용산구 용문동<br>
-								</p>
-							</div>
-						</div>
-						<div id="bookslot1">
-							<a href="rentalpage/데이터.html">
-							<img src="image/데이터.jfif" class="booklist"></a>
-							<div id="listExplain" class="prtext">
-								<h1>
-									대시보드 설계와 데이터 시각화<br>
-								</h1>
-								<p>
-									용산구 이태원동<br>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div id="bookslot">
-						<div id="bookslot1">
-							<a href="rentalpage/자바.html">
-							<img src="image/자바.jfif" class="booklist"></a>
-							<div id="listExplain" class="prtext">
-								<h1>
-									자바의 정석<br>
-								</h1>
-								<p>
-									용산구 한남동<br>
-								</p>
-							</div>
-						</div>
-						<div id="bookslot1">
-							<a href="rentalpage/자바스크립트.html">
-							<img src="image/자바스크립트.jfif" class="booklist"></a>
-							<div id="listExplain" class="prtext">
-								<h1>
-									모던 자바스크립트 입문<br>
-								</h1>
-								<p>
-									용산구 이촌동<br>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div id="Book">
-
-					<div id="bookslot">
-
-						<div id="bookslot1">
-							<a href="rentalpage/리액트.html">
-							<img src="image/리액트.jfif" class="booklist"></a>
-							<div id="listExplain" class="prtext">
-								<h1>
-									처음 만난 리액트<br>
-								</h1>
-								<p>
-									용산구 용문동<br>
-								</p>
-							</div>
-						</div>
-						<div id="bookslot1">
-							<a href="rentalpage/알고리즘.html">
-							<img src="image/알고리즘.jfif" class="booklist"></a>
-							<div id="listExplain" class="prtext">
-								<h1>
-									자료구조와 함께 배우는 알고리즘 입문(자바 편)<br>
-								</h1>
-								<p>
-									용산구 용문동<br>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div id="bookslot">
-						<div id="bookslot1">
-							<a href="rentalpage/자바웹.html">
-							<img src="image/자바웹.jfif" class="booklist"></a>
-							<div id="listExplain" class="prtext">
-								<h1>
-									자바 웹을 다루는 기술<br>
-								</h1>
-								<p>
-									용산구 남영동<br>
-								</p>
-							</div>
-						</div>
-						<div id="bookslot1">
-							<a href="rentalpage/서비스.html">
-							<img src="image/서비스.jfif" class="booklist"></a>
-							<div id="listExplain" class="prtext">
-								<h1>
-									서비스 기획 스쿨<br>
-								</h1>
-								<p>
-									용산구 한남동<br>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			
-			</article>
-			 
-			
-
-
-			<article id="listBook">
-				<div id="pNButtonBox">
-					<img id="pButton" src="image/prevButton.png"> 
-					<img id="nButton" src="image/nextButton.png">
-				</div>
-				<h3>
-					<br> <br> <a> 신규 등록 도서 </a>
-				</h3>
-				<div id="listPanel">
-					<div id="bookSlide">
-
-						<div id="newBook">
-							<div class="listB">
-								<a href="rentalpage/리액트.html"><img src="image/리액트.jfif" class="booklist"></a>
-								<div id="listExplain" class="prtext">
-									<h1>
-										처음 만난 리액트<br>
-									</h1>
-									<p>
-										이인제 / 한밭미디어<br>
-									</p>
-								</div>
-							</div>
-							<div class="listB">
-								<a href="rentalpage/알고리즘.html"><img src="image/알고리즘.jfif" class="booklist"></a>
-								<div id="listExplain" class="prtext">
-									<h1>
-										자료구조와 함께 배우는 알고리즘 입문(자바 편)<br>
-									</h1>
-									<p>
-										BohYoh Shibata / 이지스퍼블리싱<br>
-									</p>
-								</div>
-
-							</div>
-							<div class="listB">
-								<a href="rentalpage/자바웹.html"><img src="image/자바웹.jfif" class="booklist"></a>
-								<div id="listExplain" class="prtext">
-
-									<h1>
-										자바 웹을 다루는 기술<br>
-									</h1>
-									<p>
-										이병승 / 길벗<br>
-									</p>
-								</div>
-
-							</div>
-							<div class="listB">
-								<a href="rentalpage/자바.html"><img src="image/자바.jfif" class="booklist"></a>
-								<div id="listExplain" class="prtext">
-									<h1>
-										자바의 정석<br>
-									</h1>
-									<p>
-										남궁성 / 도우 출판<br>
-									</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<div id="bookSlide">
-						<div id="bestBook">
-							<div class="listB">
-								<a href="rentalpage/미움.html"><img src="image/미움.jfif" class="booklist"></a>
-								<div id="listExplain" class="prtext">
-									<h1>
-										미움받을 용기<br>
-									</h1>
-									<p>
-										기심 이치로 / 인플루엔셜<br>
-									</p>
-								</div>
-							</div>
-							<div class="listB">
-								<a href="rentalpage/MY.html"><img src="image/MYSQL.jfif" class="booklist"></a>
-								<div id="listExplain" class="prtext">
-									<h1>
-										이것이 MySQL이다<br>
-									</h1>
-									<p>
-										우재남 / 한밭미디어<br>
-									</p>
-								</div>
-
-							</div>
-							<div class="listB">
-								<a href="rentalpage/혼공.html"><img src="image/혼공.jfif" class="booklist"></a>
-								<div id="listExplain" class="prtext">
-									<h1>
-										혼자 공부하는 시간의 힘<br>
-									</h1>
-									<p>
-										책 읽는 원숭이 / 웅진지식하우스<br>
-									</p>
-								</div>
-
-							</div>
-							<div class="listB">
-								<a href="rentalpage/자바.html"><img src="image/자바.jfif" class="booklist"></a>
-								<div id="listExplain" class="prtext">
-									<h1>
-										자바의 정석<br>
-									</h1>
-									<p>
-										남궁성 / 도우 출판<br>
-									</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</article>
+			</div>
 		</section>
-			
-	    <!--  bottom -->         
-        <c:import url="/WEB-INF/views/layout/bottom.jsp" />
-	</div>
+	  <c:import url="/WEB-INF/views/layout/bottom.jsp" />
+  	</div>  
+	
+	
 </body>
 </html>
+

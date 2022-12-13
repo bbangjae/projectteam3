@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* product.css */
+
+#productBox {
+	
+	width:800px;
+	height:3000px;
+	background:white;
+	
+	padding-top:100px;
+	display:block;
+	margin:150px 0 0 240px;
+	
+	z-index:1;
+	position:absolute;
+	
+	}
+#productBox .product{
+	width:800px;
+	height:3000px;
+	
+	
+}
+
+
+
+#productBox .product div {
+	display:block;
+	width:700px;
+	height:200px;
+	margin:40px 10px;
+	border:solid 1px rgb(0, 0, 0);
+	background-color:white;
+	border-radius:10px;
+	
+}
+
+
+#productBox .product div img {
+	width:150px;
+	height:200px;
+	float:left;
+	border-radius:10px;
+	border:solid 2px black;
+}
+
+
