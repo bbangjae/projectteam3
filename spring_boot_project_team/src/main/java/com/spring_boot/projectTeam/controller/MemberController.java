@@ -23,14 +23,20 @@ public class MemberController {
 	public String loginCheck(@RequestParam HashMap<String, Object> param,
 												HttpSession session) {
 		
-		System.out.println(param.get("id"));
-		System.out.println(param.get("pw"));
+	
+//		System.out.println(param.get("pw"));
 		// 로그인 체크 결과 
 		String result = service.loginCheck(param); // result : "success" or "fail"
 		
 		// 아이디와 비밀번호 일치하면 (로그인 성공하면)
 		if(result.equals("success")) {
 			//로그인 성공하면 세션 변수 지정
+			session.setAttribute("sid", param.get("id"));
+		}
+		
+		
+		if(param.get("id").equals("admin")) {
+			result ="adminck";
 			session.setAttribute("sid", param.get("id"));
 		}
 		
@@ -55,7 +61,11 @@ public class MemberController {
 		return "login/loginform"; // 회원가입후 로그인폼으로 이동 
 	}
 	
-
+	@RequestMapping(value="/login/admin")
+	public String admin() {
+		return "login/adminform";
+	}
+	
 	
 	
 }

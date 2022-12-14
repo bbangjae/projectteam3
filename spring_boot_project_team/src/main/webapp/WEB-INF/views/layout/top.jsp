@@ -23,17 +23,20 @@
 						</c:if>		
 						
 						<!-- 로그인 성공 후 보여줄 메뉴 항목 -->
-						<c:if test="${not empty sessionScope.sid }">
+						<c:if test="${(not empty sessionScope.sid) && (sessionScope.sid == 'admin')}">
 							${sessionScope.sid}님 환영합니다! 
 							<a href="<c:url value='/login/logout'/>">로그아웃</a> 
-						</c:if>	  
+							<a href="<c:url value='/login/admin'/>">AdminPage</a> 
+						</c:if>
+						<c:if test="${(not empty sessionScope.sid) && (sessionScope.sid != 'admin')}">
+							${sessionScope.sid}님 환영합니다! 
+							<a href="<c:url value='/login/logout'/>">로그아웃</a> 
+						</c:if>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-
-
 
 <!-- ***** ***** header 부분 끝 ********* -->
 		
