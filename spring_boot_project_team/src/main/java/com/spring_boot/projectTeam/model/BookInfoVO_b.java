@@ -1,9 +1,5 @@
 package com.spring_boot.projectTeam.model;
 
-import java.util.Date;
-
-import org.springframework.format.annotation.DateTimeFormat;
-
 public class BookInfoVO_b {
 	private String bookId;
 	private String memId;
@@ -11,12 +7,18 @@ public class BookInfoVO_b {
 	private String bookAuthor;
 	private String bookPublish;
 	private int bookPrice;
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date bookDate;
+	private int rentP;
 	private String bookctg;
 	private String bookImg;
 	private String bookDis;
 	
+	
+	public int getRentP() {
+		return rentP;
+	}
+	public void setRentP(int rentP) {
+		this.rentP = rentP;
+	}
 	public String getBookId() {
 		return bookId;
 	}
@@ -52,12 +54,6 @@ public class BookInfoVO_b {
 	}
 	public void setBookPrice(int bookPrice) {
 		this.bookPrice = bookPrice;
-	}
-	public Date getBookDate() {
-		return bookDate;
-	}
-	public void setBookDate(Date bookDate) {
-		this.bookDate = bookDate;
 	}
 	public String getBookctg() {
 		return bookctg;

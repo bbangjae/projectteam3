@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.spring_boot.projectTeam.dao.IBookInfoDAO_y;
 import com.spring_boot.projectTeam.model.BookInfoVO_b;
+import com.spring_boot.projectTeam.model.BorrowVO;
 import com.spring_boot.projectTeam.model.mybookVO;
 
 @Service
@@ -42,6 +43,12 @@ public class BookInfoService_y implements IBookInfoService_y {
 	@Override
 	public void insertMyBook(mybookVO book) {
 		dao.insertMyBook(book);
+		
+	}
+
+	@Override
+	public void insertBorrow(BorrowVO book) {
+		dao.insertBorrow(book);
 		
 	}
 

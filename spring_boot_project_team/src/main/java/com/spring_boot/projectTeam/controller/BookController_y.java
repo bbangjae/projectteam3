@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.spring_boot.projectTeam.model.BookInfoVO_b;
+import com.spring_boot.projectTeam.model.BorrowVO;
 import com.spring_boot.projectTeam.model.mybookVO;
 import com.spring_boot.projectTeam.service.BookInfoService_y;
 
@@ -54,11 +55,12 @@ public class BookController_y {
 	
 	// 상품 등록
 	@RequestMapping("/book/bookInsert")
-	public String bookInsert(BookInfoVO_b book, HttpSession session, Model model, mybookVO vo) {
+	public String bookInsert(BookInfoVO_b book, HttpSession session, Model model, mybookVO vo, BorrowVO borrow) {
 		
 		String memId = (String) session.getAttribute("sid");
 		book.setMemId(memId);
 		vo.setMemId(memId);
+		borrow.setGiver(memId);
 		
 		long timeNum = System.currentTimeMillis();
 		
@@ -73,9 +75,11 @@ public class BookController_y {
 		String bookId = strTime + "_" + rNum;
 		book.setBookId(bookId);
 		vo.setBookId(bookId);
+		borrow.setBookId(bookId);
 		
 		service.insertBook(book);
 		service.insertMyBook(vo);
+		service.insertBorrow(borrow);
 		
 		return "/mypage/mypage";
 	}
