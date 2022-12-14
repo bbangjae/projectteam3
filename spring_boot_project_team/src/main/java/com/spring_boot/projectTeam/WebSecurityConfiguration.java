@@ -25,6 +25,8 @@ public class WebSecurityConfiguration {
 			.formLogin().disable()
 			.headers().frameOptions().disable();
 		
+		
+		
 		return http.build();
 	}
 }

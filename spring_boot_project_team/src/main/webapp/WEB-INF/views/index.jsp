@@ -12,7 +12,7 @@
 	<div id="wrap">
 
 	<c:import url="/WEB-INF/views/layout/top.jsp" />	
-<nav>
+	<nav id="indexSlideNav">
 
 			<article id="slideshow">
 
