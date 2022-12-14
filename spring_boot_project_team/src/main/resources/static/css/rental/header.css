@@ -2,7 +2,12 @@
 /**/
 
 
-
+#headerpanel {
+	position: fixed;
+	background: transparent;
+	width: 100%;
+	text-align:center;
+}
 
 #headerBox {
 	margin: 0px auto 0px auto;

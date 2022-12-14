@@ -1,71 +1,71 @@
 @charset "UTF-8";
 
 
-#listHeaderBF{
+#listHeader{
 	width:100%;
 	height:40px;
 	margin-bottom:20px;
 }
-.bookSlot1BF{
+.bookSlot1{
 	width:100%;
 	height:260px;
 	
 	
 }
-.explainBF{
+.explain{
 	width:100%;
 	height:70px;
 	
 	margin-bottom:30px;
 }
 
-.bookSlot1BF a:nth-child(1){
+.bookSlot1 a:nth-child(1){
 	
 	margin:0 39px 0 42px;
 	
 	
 }
-.bookSlot1BF a:nth-child(2){
+.bookSlot1 a:nth-child(2){
 	
 	margin:0 43px 0 43px;
 	
 	
 }
-.bookSlot1BF a:nth-child(3){
+.bookSlot1 a:nth-child(3){
 	
 	margin:0 42px 0 39px;
 	
 	
 }
-.explainBF{
+.explain{
 	display:inline-block;
 }
 
-.explainBF div{
+.explain div{
 	width:30%;
 	height:70px;
 	float:left;
 	text-align:center;
 }
-.explainBF div:nth-child(1){
+.explain div:nth-child(1){
 	
 	
 	margin-right:30px;
 	
 	
 }
-.explainBF div:nth-child(2){
+.explain div:nth-child(2){
 	
 	margin-right:30px;
 	
 }
 
-.booklistBF{
+.booklist{
 	width:180px;
 	height:230px;
 	border-radius:10%;
 }
-#listExplainBF{
+#listExplain{
 	width:230px;
 	height:100px;
 	margin:10px 10px 35px 10px;
