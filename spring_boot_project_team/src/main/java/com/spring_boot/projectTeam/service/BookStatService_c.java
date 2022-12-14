@@ -37,11 +37,23 @@ public class BookStatService_c implements IBookStatService_c {
 
 
 	@Override
-	public ArrayList<BookInfoVO_b> ownBookData(String memId) {
-		return dao.ownBookData(memId);
+	public ArrayList<BookInfoVO_b> statListBox1(String memId) {
+		// TODO Auto-generated method stub
+		return dao.statListBox1(memId);
 	}
 
 
+	@Override
+	public ArrayList<BookInfoVO_b> statListBox2(String memId) {
+		// TODO Auto-generated method stub
+		return dao.statListBox2(memId);
+	}
 
+
+	@Override
+	public ArrayList<BookInfoVO_b> statListBox3(String memId) {
+		// TODO Auto-generated method stub
+		return dao.statListBox3(memId);
+	}
 
 }

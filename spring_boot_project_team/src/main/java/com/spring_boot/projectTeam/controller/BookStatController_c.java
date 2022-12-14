@@ -23,10 +23,8 @@ public class BookStatController_c {
 	@RequestMapping("/mypage/mypageform")
 	public String BookStatList(Model model, mybookVO vo, HttpSession session) {
 
-		/*
-		 * String memId = (String)session.getAttribute("sid"); vo.setMemId(memId);
-		 */
-		String memId ="hahaha";
+		String memId = (String)session.getAttribute("sid"); 
+		vo.setMemId(memId);
 		
 		int bookList0 = service.statList0(memId);  // 소유 중인 도서
 		model.addAttribute("bookList0", bookList0);
@@ -35,9 +33,13 @@ public class BookStatController_c {
 		int bookList3 = service.statList3(memId);
 		model.addAttribute("bookList3", bookList3); // 관심 도서
 		model.addAttribute("myName", memId); // 아이디 출력
-		ArrayList<BookInfoVO_b> ownBookInfo = service.ownBookData(memId); // 소유 책 정보
-		model.addAttribute("ownBookInfo", ownBookInfo);
-		 
+		
+		ArrayList<BookInfoVO_b> statListBox1 = service.statListBox1(memId);
+		ArrayList<BookInfoVO_b> statListBox2 = service.statListBox2(memId);
+		ArrayList<BookInfoVO_b> statListBox3 = service.statListBox3(memId);
+		model.addAttribute("statListBox1", statListBox1);
+		model.addAttribute("statListBox2", statListBox2);
+		model.addAttribute("statListBox3", statListBox3);
 		
 		return "mypage/mypageform";
 	}
