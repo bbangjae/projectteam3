@@ -44,20 +44,20 @@
 							<td id="blkPro">
 							</td>
 							<td id="namesize"class="pofilepre">
-								<h3>나는야홍길동</h3>
+								<h3>${myName }</h3>
 							</td>
 							<td id="blk"></td>
 							<td class="pofileBlk">
-							<div id="registNum"class="mypageNum">0</div>
+							<div id="registNum"class="mypageNum">${bookList0 }</div>
 							등록 도서
 							</td>
 							<td class="pofileBlk">
-							<div id="rentalNum"class="mypageNum">0</div>
-							대여 도서
+							<div id="rentalNum"class="mypageNum">${bookList2 }</div>
+							대여 중인 도서
 							</td>
 							<td class="pofileBlk">
-							<div class="mypageNum">1</div>
-							게시글
+							<div id="rentalNum"class="mypageNum">${bookList3 }</div>
+							관심도서
 							</td>
 						</tr>
 					</table>
