@@ -49,6 +49,10 @@
 			<section>
 				<div id="bookMa">
 					<h2 id="bookh3">나의 도서 관리</h2>
+					<div style="position: absolute; right:750px;">
+						<h4>충전금액 : </h4>
+						<button>충전하기</button>
+					</div>
 				</div>
 				<hr id="hr1">
 				<div align="center">

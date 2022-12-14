@@ -13,7 +13,9 @@ import org.springframework.security.web.SecurityFilterChain;
 public class WebSecurityConfiguration {
 	@Bean
 	public PasswordEncoder getPasswordEncoder() {
-		return new BCryptPasswordEncoder(); // BCrypt라는 해시 함수를 이용해서 암호화하는 기능
+		
+		 return new BCryptPasswordEncoder(); // BCrypt라는 해시 함수를 이용해서 암호화하는 기능
+	      
 	}
 	
 	@Bean
