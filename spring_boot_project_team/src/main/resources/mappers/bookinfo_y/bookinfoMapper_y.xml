@@ -21,6 +21,24 @@
 	<select id="listAllBook" resultMap="bookResult">
 		SELECT * FROM bookInfo ORDER BY bookId
 	</select>
+	
+	<!-- 도서 검색 -->
+	<select id="bookSearch" parameterType="hashmap" resultMap="bookResult">
+		select * from bookInfo where
+		<choose>
+			<when test="type != null and type.equals('bookName')">
+				bookName Like CONCAT('%', #{keyword}, '%')
+			</when>
+			<when test="type != null and type.equals('bookctg')">
+				bookctg Like CONCAT('%', #{keyword}, '%')
+			</when>
+		</choose>
+	</select>
+	
+	<insert id="insertBook" parameterType="com.spring_boot.projectTeam.model.BookInfoVO_b">
+		INSERT INTO bookInfo (bookId, memId, bookName, bookAuthor, bookPublish, bookPrice, bookDate, bookctg, bookImg, bookDis)
+		VALUES (#{bookId}, #{memId}, #{bookName}, #{bookAuthor}, #{bookPublish}, #{bookPrice}, #{bookDate}, #{bookctg}, #{bookImg}, #{bookDis})
+	</insert>
 
   
 </mapper>
