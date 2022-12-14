@@ -15,7 +15,6 @@ body{
    background:#f5f6f7;
    margin:0px auto;
    border:solid 0.1px white;
-   width:1280px;
    height:100%;
    text-align:center;
    
@@ -30,13 +29,13 @@ body{
    text-align:center;
    background:white;
 }
-
+#indexSlideNav{
+	background-color:rgb(226, 223, 220) ;
+}
 #slideshow{
-   
-   margin-top:120px;
+   margin: 120px auto 50px auto;
    width:1280px;
    position:relative;
-   border:solid 1px white;
    height:580px;
    
 }
