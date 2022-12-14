@@ -10,9 +10,4 @@
 		VALUES (#{bookId}, #{giver}, 0, 0)
 	</insert>
 
-   <insert id="insertBorrow" parameterType="com.spring_boot.projectTeam.model.BorrowVO">
-      INSERT INTO borrow (bookId, giver, giveNo, takeNo)
-      VALUES (#{bookId}, #{giver}, 0, 0)
-   </insert>
-
 </mapper>
