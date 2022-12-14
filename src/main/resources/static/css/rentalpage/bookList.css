@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+
+#listHeader{
+	width:100%;
+	height:40px;
+	margin-bottom:20px;
+}
+.bookSlot1{
+	width:100%;
+	height:260px;
+	
+	
+}
+.explain{
+	width:100%;
+	height:70px;
+	
+	margin-bottom:30px;
+}
+
+.bookSlot1 a:nth-child(1){
+	
+	margin:0 39px 0 42px;
+	
+	
+}
+.bookSlot1 a:nth-child(2){
+	
+	margin:0 43px 0 43px;
+	
+	
+}
+.bookSlot1 a:nth-child(3){
+	
+	margin:0 42px 0 39px;
+	
+	
+}
+.explain{
+	display:inline-block;
+}
+
+.explain div{
+	width:30%;
+	height:70px;
+	float:left;
+	text-align:center;
+}
+.explain div:nth-child(1){
+	
+	
+	margin-right:30px;
+	
+	
+}
+.explain div:nth-child(2){
+	
+	margin-right:30px;
+	
+}
+
+.booklist{
+	width:180px;
+	height:230px;
+	border-radius:10%;
+}
+#listExplain{
+	width:230px;
+	height:100px;
+	margin:10px 10px 35px 10px;
+	/* border:solid 1px green; */
+}
