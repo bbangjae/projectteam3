@@ -31,10 +31,7 @@
 						<c:if test="${(not empty sessionScope.sid) && (sessionScope.sid != 'admin')}">
 							${sessionScope.sid}님 환영합니다! 
 							<a href="<c:url value='/login/logout'/>">로그아웃</a> 
-							
 						</c:if>
-												  
-						
 					</div>
 				</div>
 			</div>
