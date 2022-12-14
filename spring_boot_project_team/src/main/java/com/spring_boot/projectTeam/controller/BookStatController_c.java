@@ -24,12 +24,14 @@ public class BookStatController_c {
 		 * String memId = (String)session.getAttribute("sid"); vo.setMemId(memId);
 		 */
 		String memId ="hahaha";
+		
 		int bookList0 = service.statList0(memId);
 		model.addAttribute("bookList0", bookList0);
 		int bookList2 = service.statList2(memId);
 		model.addAttribute("bookList2", bookList2);
 		int bookList3 = service.statList3(memId);
 		model.addAttribute("bookList3", bookList3);
+		model.addAttribute("myName", memId);
 		return "mypage/mypageform";
 	}
 }

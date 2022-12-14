@@ -44,7 +44,7 @@
 							<td id="blkPro">
 							</td>
 							<td id="namesize"class="pofilepre">
-								<h3>나는야홍길동</h3>
+								<h3>${myName }</h3>
 							</td>
 							<td id="blk"></td>
 							<td class="pofileBlk">

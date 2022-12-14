@@ -25,6 +25,6 @@ public class FormController {
 	public String monthform() {
 		return "month/monthform";
 	}
-	// 마이페이지 폼 열기 >bookStatController 로 이동
+	// 마이페이지 폼 열기 >bookStatController 로 이동했습니다 착오 없으시길:)
 
 }

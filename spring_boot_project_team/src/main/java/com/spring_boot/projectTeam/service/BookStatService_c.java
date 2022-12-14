@@ -33,4 +33,6 @@ public class BookStatService_c implements IBookStatService_c {
 	}
 
 
+
+
 }
