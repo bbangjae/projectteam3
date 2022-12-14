@@ -7,8 +7,8 @@
 <meta charset="UTF-8">
 <meta name="Viewport" content="width=device-width, initial-scale=1.0">
 <title>독서관_이달의 책 추천</title>
-<link rel="stylesheet" type="text/css" href='<c:url value="/css/month/recommend.css"/>'>
-<script src='<c:url value="/js/jquery-3.6.1.min.js"/>'></script>
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/recommend.css'/>">
+<script src="js/jquery-3.6.1.min.js"></script>
 <script src='<c:url value="/js/recommend.js"/>'></script>
 </head>
 
@@ -24,11 +24,11 @@
 		<article id="month">
 
 			<div id="prevNextButtonBox">
-				<img id="prevButton" src="/lib/right.png"> <img id="nextButton"
-					src="/lib/right.png">
+				<img id="prevButton" src='<c:url value="/lib/right.png"/>'> <img id="nextButton"
+					src='<c:url value="/lib/right.png"/>'>
 			</div>
 			<div id="hyper">
-				<a href="<c:url value='/rental/rentalform'/>" id="hyperButton">바로 대여>></a>
+				<a href="<c:url value='/'/>" id="hyperButton">바로 대여>></a>
 			</div>
 
 			<div id="limitbox">

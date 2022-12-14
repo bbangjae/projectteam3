@@ -18,15 +18,15 @@
 
 				<!--  (1) prevNext 버튼 박스 -->
 				<div id="prevNextButtonBox">
-					<img id="prevButton" src='<c:url value="/image/prevButton.png"/>'> 
-					<img id="nextButton" src='<c:url value="/image/nextButton.png"/>'>
+					<img id="prevButton" src="image/prevButton.png"> <img
+						id="nextButton" src="image/nextButton.png">
 				</div>
 				<!--  (2) 슬라이드 쇼 박스-->
 				<div id="slideShowBox">
 					<div id="slidePanel">
-						<img src='<c:url value="/image/slidebook1.jpg"/>' class="slideImage"> 
-						<img src='<c:url value="/image/slidebook2.jpg"/>' class="slideImage">
-						<img src='<c:url value="/image/slidebook3.jpg"/>' class="slideImage">
+						<img src="image/slidebook1.jpg" class="slideImage"> 
+						<img src="image/slidebook2.jpg" class="slideImage">
+						<img src="image/slidebook3.jpg" class="slideImage">
 					</div>
 					<!-- slidePanel 끝 -->
 				</div>
@@ -34,9 +34,9 @@
 				<!-- (3) 컨트롤 버튼 -->
 				<div id="controlButtonBox">
 					<!-- 대여,이달의책 후기 -->
-					<img src='<c:url value="/image/controlButton1.png"/>' class="controlButton"> 
-					<img src='<c:url value="/image/controlButton1.png"/>' class="controlButton"> 
-					<img src='<c:url value="/image/controlButton1.png"/>'  class="controlButton">
+					<img src="image/controlButton1.png" class="controlButton"> 
+					<img src="image/controlButton1.png" class="controlButton"> 
+					<img src="image/controlButton1.png" class="controlButton">
 
 				</div>
 
@@ -201,8 +201,8 @@
 
 			<article id="listBook">
 				<div id="pNButtonBox">
-					<img id="pButton" src='<c:url value="/image/prevButton.png"/>'> 
-					<img id="nButton" src='<c:url value="/image/nextButton.png"/>'>
+					<img id="pButton" src="image/prevButton.png"> 
+					<img id="nButton" src="image/nextButton.png">
 				</div>
 				<h3>
 					<br> <br> <a> 신규 등록 도서 </a>
