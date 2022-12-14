@@ -81,6 +81,6 @@ public class BookController_y {
 		service.insertMyBook(vo);
 		service.insertBorrow(borrow);
 		
-		return "/mypage/mypage";
+		return "/mypage/mypageform";
 	}
 }
