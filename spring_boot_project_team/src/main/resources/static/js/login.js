@@ -15,7 +15,10 @@
  			       "pw":$('#input-pw').val()},
  			dataType:'text',
  			success:function(result){
- 				if(result == "success"){
+ 				if(result == "adminck"){
+ 					alert("관리자님 안녕하세요");
+ 					location.href="\admin";
+ 				}else if(result == "success"){
  					alert("로그인 성공\n독서관 입성!");
  					location.href="/";
  				}else{

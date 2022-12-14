@@ -59,6 +59,7 @@
   				<tr><td class="c2"><a href="#" id="bookLike">좋아요</a>:${bv.bookLike}<a href="#" id="comment"> 채팅:${bv.bookComment}</a>조회:${bv.bookLook}</td></tr>
   				
   			</table>
+  			<button type="button" >채팅하기</button>
 		<br><hr>
   		</article> 	
    		

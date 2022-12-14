@@ -32,8 +32,29 @@
 	<select id="statList3" parameterType="String" resultType="int">
 		SELECT count(*) FROM mybook WHERE stats=3 and memId=#{memId}	
 	</select>
-	<select id="ownBookData"  parameterType="hashmap" resultMap="bookInfoResult">
-	SELECT bookName, bookImg, bookDis, bookctg FROM bookInfo WHERE memId=#{memId}
+	
+	<select id="statListBox1" parameterType="string" resultType="com.spring_boot.projectTeam.model.mybookVO">
+		SELECT mybook.memId, bookInfo.bookName, bookInfo.bookAuthor 
+		FROM mybook 
+		INNER JOIN bookInfo 
+		ON mybook.memId=bookInfo.memId AND mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
+		WHERE stats=0
+	</select>
+	
+	<select id="statListBox2" parameterType="string" resultType="com.spring_boot.projectTeam.model.mybookVO">
+		SELECT mybook.memId, bookInfo.bookName, bookInfo.bookAuthor 
+		FROM mybook 
+		INNER JOIN bookInfo 
+		ON mybook.memId=bookInfo.memId AND mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
+		WHERE stats=1	
+	</select>
+	
+	<select id="statListBox3" parameterType="string" resultType="com.spring_boot.projectTeam.model.mybookVO">
+		SELECT mybook.memId, bookInfo.bookName, bookInfo.bookAuthor 
+		FROM mybook 
+		INNER JOIN bookInfo 
+		ON mybook.memId=bookInfo.memId AND mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
+		WHERE stats=2
 	</select>
 
 

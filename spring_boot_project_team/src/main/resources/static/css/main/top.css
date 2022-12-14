@@ -1,10 +1,11 @@
 #headerpanel{
-   position:fixed;
+   position:relative;
    width:1280px;
    height:100px;
    z-index:1000;
    background: #f5f6f7;
    font-family:Georfia;
+   margin:0px auto;
    
 }
 #header{
