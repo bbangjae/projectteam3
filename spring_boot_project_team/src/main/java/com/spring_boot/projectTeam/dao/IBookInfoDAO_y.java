@@ -14,4 +14,5 @@ public interface IBookInfoDAO_y {
 	public void insertMyBook(mybookVO book); // mybook 테이블 데이터 저장
 	public void deleteBook(BookInfoVO_b bookId);
 	public void insertBorrow(BorrowVO book); // borrow 테이블 데이터 추가
+	
 }

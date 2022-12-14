@@ -83,4 +83,5 @@ public class BookController_y {
 		
 		return "/mypage/mypageform";
 	}
+	
 }
