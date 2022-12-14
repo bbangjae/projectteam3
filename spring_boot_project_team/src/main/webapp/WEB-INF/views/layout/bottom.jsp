@@ -11,7 +11,7 @@
 			<div id="footerBox">
 				<div class="bottomMenuBox">
 					<ul id="botttomMenuItem">
-						<li><a href="index.html">홈</a></li>
+						<li><a href='<c:url value="/"/>'>홈</a></li>
 						<li><a href="">회사소개</a></li>
 						<li><a href="">이용약관</a></li>
 						<li><a href="">개인정보처리방침</a></li>
@@ -19,11 +19,11 @@
 						<li><a href="">제휴문의</a></li>
 
 						<li><a href="http://www.instagram.com" target="_blank"> <img
-								src="image/instagram.png"></a></li>
+								src='<c:url value="/image/instagram.png"/>'></a></li>
 						<li><a href="http://www.kakaocorp.com" target="_blank"><img
-								src="image/kakao.jfif"></a></li>
+								src='<c:url value="/image/kakao.jfif"/>'></a></li>
 						<li><a href="http://www.naver.com" target="_blank"><img
-								src="image/naver.jfif"></a></li>
+								src='<c:url value="/image/naver.jfif"/>'></a></li>
 					</ul>
 				</div>
 			</div>

@@ -7,7 +7,7 @@
 		<meta charset="UTF-8">
 		<title>로그인 페이지</title>
 		
-		<link rel="stylesheet" type="text/css" href='<c:url value="/css/login.css"/>'>
+		<link rel="stylesheet" type="text/css" href='<c:url value="/css/login/login.css"/>'>
 		<script src='<c:url value="/js/jquery-3.6.1.min.js"/>'></script> 
 		<script src='<c:url value="/js/login_signup.js"/>'></script>
 	
