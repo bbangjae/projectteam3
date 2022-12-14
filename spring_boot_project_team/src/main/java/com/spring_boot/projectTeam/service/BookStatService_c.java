@@ -1,10 +1,13 @@
  package com.spring_boot.projectTeam.service;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.spring_boot.projectTeam.dao.IBookStatDAO_c;
+import com.spring_boot.projectTeam.model.BookInfoVO_b;
 
 @Service
 public class BookStatService_c implements IBookStatService_c {
@@ -30,6 +33,12 @@ public class BookStatService_c implements IBookStatService_c {
 	@Override
 	public int statList3(String memId) {
 		return dao.statList3(memId);
+	}
+
+
+	@Override
+	public ArrayList<BookInfoVO_b> ownBookData(String memId) {
+		return dao.ownBookData(memId);
 	}
 
 

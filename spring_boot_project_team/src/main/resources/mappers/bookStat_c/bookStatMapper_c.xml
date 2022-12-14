@@ -10,6 +10,18 @@
   		<result property="bookId"  column="bookId"  />
   	</resultMap>
   	
+	<resultMap id="bookInfoResult" type="com.spring_boot.projectTeam.model.BookInfoVO_b" >
+  		<result property="bookId"  column="bookId"  />
+  		<result property="memId"  column="memId"  />
+  		<result property="bookName"  column="bookName"  />
+  		<result property="bookAuthor"  column="bookAuthor"  />
+  		<result property="bookPublish"  column="bookPublish"  />
+  		<result property="bookctg"  column="bookctg"  />
+  		<result property="bookImg"  column="bookImg"  />
+  		<result property="bookDis"  column="bookDis"  />
+  	
+  	</resultMap>
+  	
 	<!--  보유중인 도서 확인-->
 	<select id="statList0" parameterType="String" resultType="int">
 		SELECT count(*) FROM mybook WHERE stats=0 and memId=#{memId}	
@@ -19,6 +31,9 @@
 	</select>
 	<select id="statList3" parameterType="String" resultType="int">
 		SELECT count(*) FROM mybook WHERE stats=3 and memId=#{memId}	
+	</select>
+	<select id="ownBookData"  parameterType="hashmap" resultMap="bookInfoResult">
+	SELECT bookName, bookImg, bookDis, bookctg FROM bookInfo WHERE memId=#{memId}
 	</select>
 
 
