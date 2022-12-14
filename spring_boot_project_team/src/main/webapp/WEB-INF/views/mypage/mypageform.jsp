@@ -110,6 +110,41 @@
 							</td>
 						</tr>
 					</table>
+					<!-- ---------------------데이터 나옴----------------------- -->
+					<table border="1">
+					<c:forEach var="book" items="${statListBox1 }">
+			            <tr>
+			               <td><a href="<c:url value='/'/>" >${book.bookAuthor }</a></td>
+			               <td>${book.bookName }</td>
+			               <td>${book.bookName }</td>
+			               <td>${book.bookName }</td>
+			               <td>${book.bookName }</td>			               
+			            </tr>
+			         </c:forEach>
+			         </table>
+			         <table border="1">
+			         <c:forEach var="book1" items="${statListBox2 }">
+			            <tr>
+			               <td><a href="<c:url value='/'/>" >${book1.bookAuthor }</a></td>
+			               <td>${book1.bookName }</td>
+			               <td>${book1.bookName }</td>
+			               <td>${book1.bookName }</td>
+			               <td>${book1.bookName }</td>			               
+			            </tr>
+			         </c:forEach>
+			         </table>
+			         <table border="1">
+			         <c:forEach var="book2" items="${statListBox3 }">
+			            <tr>
+			               <td><a href="<c:url value='/'/>" >${book2.bookAuthor }</a></td>
+			               <td>${book2.bookName }</td>
+			               <td>${book2.bookName }</td>
+			               <td>${book2.bookName }</td>
+			               <td>${book2.bookName }</td>			               
+			            </tr>
+			         </c:forEach>
+			         </table>
+			         <!-- ---------------------데이터 나옴----------------------- -->
 				</div>
 			</section>
 			<!--  bottom -->         

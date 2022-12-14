@@ -56,8 +56,7 @@ public class BookController_y {
 	@RequestMapping("/book/bookInsert")
 	public String bookInsert(BookInfoVO_b book, HttpSession session, Model model, mybookVO vo) {
 		
-		//String memId = (String) session.getAttribute("sid");
-		String memId = "bong";
+		String memId = (String) session.getAttribute("sid");
 		book.setMemId(memId);
 		vo.setMemId(memId);
 		
