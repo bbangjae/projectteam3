@@ -62,9 +62,10 @@
 
 
 /* ------------------section------------------------- */
-h3{
+h3, h2{
 	text-align:left;
 }
+
 
 #table2 {
 	width:auto;
@@ -72,6 +73,7 @@ h3{
 }
 #padleft{
 	margin:10px;
+	height:50px;
 	border:solid 4px rgb(155, 111, 72);
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -79,6 +81,7 @@ h3{
 #padright{
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	height:50px;
 	border:solid 4px rgb(155, 111, 72);
 	margin:10px;
 }
@@ -118,6 +121,7 @@ h3{
 }
 .toCenter{
 	text-align:center;
+	margin-top: 15px;
 }
 a{
 	text-decoration:none;
@@ -150,5 +154,10 @@ a:hover{
 	font-weight:bold;
 }
 #bookMa{
-	margin-left:20%;
+	margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#addButton{
+	position: absolute;
 }

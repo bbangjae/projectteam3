@@ -3,12 +3,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
    
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/common.css"/>'>
-<link rel="stylesheet" type="text/css" href='<c:url value="/css/main/menu.css"/>'>
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/slideshow.css"/>'>
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/tab.css"/>'>
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/bookLent.css"/>'>
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/listBook.css"/>'>
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/footer.css"/>'>
+<link rel="stylesheet" type="text/css" href='<c:url value="/css/main/top.css"/>'>
+
 
 
 <script src="js/jquery-3.6.1.min.js"></script>

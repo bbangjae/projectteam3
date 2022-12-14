@@ -1,0 +1,46 @@
+#headerpanel{
+   position:fixed;
+   width:1280px;
+   height:100px;
+   z-index:1000;
+   background: #f5f6f7;
+   
+}
+#header{
+    width:1280px;
+    height:100px;
+    margin:0 auto;
+    
+}
+#logo{
+    margin:0;
+    float:left;
+}
+
+#logoBox{
+    float:left;
+    width: 1050px;
+}
+.menuBox{
+	display:flex;
+}
+
+
+.loginmenu123{
+   position: absolute;
+   display:inline-block;
+   right:30px
+}
+
+
+#logoBox  a{
+    font-size:23px;
+    color:black;
+    font-weight: bold;
+    width:100px;
+    display:inline-block;
+    margin-top:50px;
+    text-decoration: none;
+    
+    
+}
