@@ -6,12 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>대여 페이지</title>
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link rel="stylesheet" type="text/css" href="css/product.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<c:import url="/WEB-INF/views/layout/head.jsp" />
 
 	<script src="jquery-3.6.1.min.js"></script>
 	
@@ -21,24 +16,7 @@
 </head>
 <body>
 	<div id="wrap">
-		<header id="headerpanel">
-				<div id="header">
-					<h1 id="logo">
-						<a href="../index.html"><img src="image/로고.png" width=230px; height=110px; id="logoImg"></a>
-					</h1>
-					<div id="logoBox">
-						<ul class="menuBox">
-							<li><a href="../rental/rental.html" class="menuBox1">대여</a></li>
-							<li><a href="../month/subpage_recommend.html" class="menuBox2">이달의 책</a></li>
-							<li><a href="../mypage/mypage.html" class="menuBox2">내 서재</a></li>
-						 </ul>
-					 	<ul>
-							<li><a href="../login/login2.html">로그인</a></li>
-							<li><a href="../login/signUp.html">회원가입</a></li>
-						</ul>
-					</div>
-				</div>
-			</header>
+		<c:import url="/WEB-INF/views/layout/top.jsp" />	
 		<section>
 			<!-- <div id="zBox"> -->
 				<!-- <div id="searchBox">
@@ -140,33 +118,8 @@
 				<!-- </div> -->
 			</div>
 		</section>
-	<footer>
-			<article id="inspire">
-				<p id="write">
-					"I can do this all day."<br> <br> – Captain America
-				</p>
-			</article>
-
-			<div id="footerBox">
-				<div class="bottomMenuBox">
-					<ul id="botttomMenuItem">
-						<li><a href="../index.html">홈</a></li>
-						<li><a href="">회사소개</a></li>
-						<li><a href="">이용약관</a></li>
-						<li><a href="">개인정보처리방침</a></li>
-						<li><a href="">이용안내</a></li>
-						<li><a href="">제휴문의</a></li>
-
-						<li><a href="http://www.instagram.com" target="_blank"> <img
-								src="image/instagram.png"></a></li>
-						<li><a href="http://www.kakaocorp.com" target="_blank"><img
-								src="image/kakao.jfif"></a></li>
-						<li><a href="http://www.naver.com" target="_blank"><img
-								src="image/naver.jfif"></a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
+	<!--  bottom -->         
+    <c:import url="/WEB-INF/views/layout/bottom.jsp" />
   	</div>  
 	
 	

@@ -7,9 +7,9 @@
 		<meta charset="UTF-8">
 		<title>로그인 페이지</title>
 		
-		<link rel="stylesheet" type="text/css" href='<c:url value="/css/login.css"/>'>
+		<link rel="stylesheet" type="text/css" href='<c:url value="/css/login/login.css"/>'>
 		<script src='<c:url value="/js/jquery-3.6.1.min.js"/>'></script> 
-		<script src='<c:url value="/js/login_signup.js"/>'></script>
+		<script src='<c:url value="/js/login.js"/>'></script>
 	
 			
 		<style> 
@@ -27,17 +27,17 @@
 			</header>
 			
 			<section class="login-wrap">
-				<form id="login-form" name="login-form" method="post"action='<c:url value="/"/>'>
+				<form id="login-form" name="login-form" method="post" >
 					<div class="login-id-wrap">
-						<input id="input-id" placeholder="" type="text" required>
+						<input id="input-id" name="input-id"  type="text" required>
 						<label for="id">USER ID</label>
 					</div>
 					<div class="login-pw-wrap">
-						<input id="input-pw" placeholder="" type="password" required>
+						<input id="input-pw" name="input-pw" type="password" required>
 						<label for="pw">PASSWORD</label>
 					</div>
 					<div class="login-btn-wrap">
-						<button id="login-btn"onClick = "logininput()" type="submit">로그인</button>
+						<button id="login-btn" name="login-btn" type="submit">로그인</button>
 					</div>
 					<div class="under-login">
 						<span class="stay-check">
@@ -57,7 +57,7 @@
 						<a>비밀번호 찾기</a>
 					</span>
 					<span class="sign-up">
-						<a href='<c:url value="/login/signUp"/>' target="_blank" >회원가입</a>
+						<a href='<c:url value="/login/signUpform"/>' target="_blank" >회원가입</a>
 					</span>
 				</div>
 			</section>

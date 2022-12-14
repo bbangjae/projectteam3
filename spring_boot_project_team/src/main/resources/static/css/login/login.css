@@ -149,7 +149,15 @@ h3{
     background: #fff;
     cursor: pointer;
 }
-#signup-pw, #signup-pww, #signup-name, #signup-gender, #signup-id{
+.signup-input2{
+  	display:flex;
+  	flex-wrap: wrap;
+    padding: 10px;
+    border: solid 1px rgb(212, 212, 212);
+    background: #fff;
+    cursor: pointer;
+}
+#signup-pw, #signup-pww, #signup-name, #signup-gender, #signup-id, #signup-nick, #memEmail{
     height: 29px;
     border: none;
     outline:none;
@@ -195,6 +203,26 @@ h3{
     background: #fff;
     box-sizing: border-box;
 }
+.signup-input-address{
+  	display: block;
+    position: relative;
+    width: 100%;
+    height: 51px;
+    border: solid 1px rgb(212, 212, 212);
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    text-align: left;
+    
+}
+#memAddress, #memAddress2{
+	width: 100%;
+    height: 29px;
+    border: none;
+    outline:none;
+    font-size: 13px;
+    
+}
 #signup-birth-yy, #signup-birth-mm, #signup-birth-dd, #signup-birth-main, #signup-birth-fs, #signup-birth-sec, #signup-phone-main{
     width: 113px;
     height: 29px;
@@ -209,12 +237,21 @@ h3{
     line-height: 55px;
     margin: 10px 0px 50px 0px;
     border: solid 1px rgba(0,0,0,.1);
-    background-color:rgb(174, 165, 157);
+    
     color: #fff;
     cursor: pointer;
 }
 #signup-btn{
-    width:100%;
+    width:50%;
+    background-color:rgb(174, 165, 157);
+    border: none;
+    color:#fff;
+    font-size: 18px;
+    outline:none;
+    cursor: pointer;
+}
+#nonesignup-btn{
+    width:50%;
     background-color:rgb(174, 165, 157);
     border: none;
     color:#fff;
@@ -231,7 +268,7 @@ h3{
     color: #fff;
     cursor: pointer;
 }
-#cnum-btn{
+#cnum-btn, #searchZipBtn{
     width:115px;
     background-color: rgb(174, 165, 157);
     border: none;
