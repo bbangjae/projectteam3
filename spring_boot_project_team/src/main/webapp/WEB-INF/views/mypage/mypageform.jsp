@@ -7,31 +7,12 @@
 		<meta charset="UTF-8">
 		<title>마이페이지</title>
 		<link rel="stylesheet" type="text/css" href='<c:url value="/css/mypage/all.css"/>'>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/mypage/footer.css'/>">
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/mypage/header.css'/>">
-		<script src="js/jquery-3.6.1.min.js"></script>
-		<script src="js/mypage.js"></script>
-	</head>
-	<body>
-		<div id="wrap">
-			<header id="headerpanel">
-				<div id="header">
-					<h1 id="logo">
-						<a href= "<c:url value='/'/>"><img src='<c:url value="/image/로고.png"/>' width=230px; height=110px; id="logoImg"></a>
-					</h1>
-					<div id="logoBox">
-						<ul class="menuBox">
-							<li><a href="<c:url value='/rental/rentalform'/>" class="menuBox1">대여</a></li>
-							<li><a href="<c:url value='/month/monthform'/>"class="menuBox2">이달의 책</a></li>
-							<li><a href="#" class="menuBox2">내 서재</a></li>
-						 </ul>
-					 	<ul>
-							<li><a href= "<c:url value='/login/login2'/>">로그인</a></li>
-							<li><a href= "<c:url value='/login/signUp'/>">회원가입</a></li>
-						</ul>
-					</div>
-				</div>
-			</header>
+		<c:import url="/WEB-INF/views/layout/head.jsp" />
+</head>
+<body>
+	<div id="wrap">
+
+	<c:import url="/WEB-INF/views/layout/top.jsp" />	
 			<nav>
 				<div id="navTop">
 				</div>
@@ -75,7 +56,7 @@
 						<tr>
 							<td id="onecol">
 								<div id="padleft">
-									<div id="onecol1"><h3 class="toCenter">등록된 도서</h3><button id="addButton">+ 추가 등록</button></div>
+									<div id="onecol1" ><h3 class="toCenter" >등록된 도서</h3><button id="addButton">+ 추가 등록</button></div>
 								</div>
 							</td>
 							<td id="twocol">
@@ -131,24 +112,8 @@
 					</table>
 				</div>
 			</section>
-			<footer>
-			
-				<div id="footerBox">
-					<div class="bottomMenuBox">
-						<ul id="botttomMenuItem">
-							<li><a href= "<c:url value='/'/>">홈</a></li>
-							<li><a href="">회사소개</a></li>
-							<li><a href="">이용약관</a></li>
-							<li><a href="">개인정보처리방침</a></li>
-							<li><a href="">이용안내</a></li>
-							<li><a href="">제휴문의</a></li>
-							<li><a href="http://www.instagram.com"target="_blank"> <img src="<c:url value='/image/instagram.png'/>"></a></li>
-							<li><a href="http://www.kakaocorp.com"target="_blank"><img src="<c:url value='/image/kakao.jfif'/>"></a></li>
-							<li><a href="http://www.naver.com"target="_blank"><img src="<c:url value='/image/naver.jfif'/>"></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
+			<!--  bottom -->         
+        	<c:import url="/WEB-INF/views/layout/bottom.jsp" />
 		</div>
 	</body>
 </html>
