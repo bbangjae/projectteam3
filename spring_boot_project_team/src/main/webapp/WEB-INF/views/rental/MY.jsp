@@ -6,13 +6,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>빌린페이지 </title>
-		<link rel="stylesheet" type="text/css" href="css/rentalpage/common.css">
-		<link rel="stylesheet" type="text/css" href="css/rentalpage/menu.css">
-		<link rel="stylesheet" type="text/css" href="css/rentalpage/write.css">
-		<link rel="stylesheet" type="text/css" href="css/rentalpage/content.css">
-		<link rel="stylesheet" type="text/css" href="css/rentalpage/bookList.css">
-		<link rel="stylesheet" type="text/css" href="css/rentalpage/footer.css">
-		<link rel="stylesheet" type="text/css" href="css/rentalpage/header.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/write.css">
+		<link rel="stylesheet" type="text/css" href="css/content.css">
+		<link rel="stylesheet" type="text/css" href="css/bookList.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		
 		<script src="jquery-3.6.1.min.js"></script>
 		<script type="text/javascript">
 			

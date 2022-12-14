@@ -6,10 +6,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>마이페이지</title>
-		<link rel="stylesheet" type="text/css" href='<c:url value="/css/mypage/all.css"/>'>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/mypage/footer.css'/>">
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/mypage/header.css'/>">
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/mypage/reg.css'/>">
+		<link rel="stylesheet" type="text/css" href='<c:url value="/css/all.css"/>'>
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/footer.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/header.css'/>">
 		<script src="js/jquery-3.6.1.min.js"></script>
 		<script src="js/mypage.js"></script>
 	</head>
