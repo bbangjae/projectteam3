@@ -22,7 +22,7 @@
 	<select id="detailViewBook" parameterType="string"
    							resultType="com.spring_boot.projectTeam.model.BookInfoVO_b">
 	
-  		SELECT * FROM bookInfo WHERE bookId=#{bookId}
+  		SELECT * FROM bookinfo WHERE bookId=#{bookId}
   		
   	</select> 
 
