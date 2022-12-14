@@ -8,6 +8,8 @@ public class HomeController {
 	//index 페이지 열기
 	@RequestMapping("/")
 	public String index() {
+		
 		return "index";
 	}
+	
 }

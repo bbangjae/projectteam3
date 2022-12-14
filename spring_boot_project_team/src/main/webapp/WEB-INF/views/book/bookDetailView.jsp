@@ -7,6 +7,11 @@
 		<meta charset="UTF-8">
 		<title>독서관</title>
 		<c:import url="/WEB-INF/views/layout/head.jsp" />
+		<link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/bookList.css"/>'>
+		<link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/common.css"/>'>
+		<link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/content.css"/>'>
+		<link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/write.css"/>'>
+		<%-- <link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/menu.css"/>'> --%>
 	</head>
 	<body>
 		<div id ="wrap">
@@ -20,15 +25,15 @@
    	 
   		<article id="writerBF">
   			
-  			<div id="profile">
-  				<h1 id="pLogo">
+  			<div id="profileBF">
+  				<h1 id="pLogoBF">
   					<!-- 이름 -->
 	  				<img  src="/image/홍길동.png" width=50px; height=50px; class="profile">
 	  			</h1>
 	  			<div id="pfContent">
 	  				<ul>
-		  				<li><p class="ID">${bk.memId}</p></li> <!-- !!id들고오기 -->
-		  				<li><p>서울시 용산구</p></li> <!-- !!!지역 -->
+		  				<li><p class="IDBF">${bk.memId}</p></li> <!-- !!id들고오기 -->
+		  				<li><p class="addBF">서울시 용산구</p></li> <!-- !!!지역 -->
 	  				</ul>
   				</div>
   			</div>
@@ -40,12 +45,19 @@
   		<article id="contentBF">
   			<table id="cTable" >
   				<tr><th>${bk.bookName} </th></tr>
-  				<tr><td class="c1">4시간전</td></tr>
-  				<tr><td rowspan="3">${bk.bookDis }<br><br></td></tr>
+  				<tr><td class="c1">저자:${bk.bookAuthor } / 출판사: ${bk.bookPublish }</td></tr>
+  				<tr><td class="c2">4시간전</td></tr>
   				<tr><td></td></tr>
+  				<tr><td><hr></td></tr>
+  				<tr><td><br></td></tr>
+  				<tr><th><span id="title">보증금:</span><span id="price">${bk.bookPrice}원</span></th></tr>
+  				<tr><th><span id="title">대여료:</span><span id="price2"> ${rentP}원</span></th></tr>
+  				
+  				<tr><td id="script" rowspan="3">${bk.bookDis }<br><br></td></tr>
+  				
   				<tr><td></td></tr>
-  				<tr><td class="c1">좋아요:32채팅:3조회:224</td></tr>
-  			
+  				<tr><td class="c2"><a href="#" id="bookLike">좋아요</a>:${bv.bookLike}<a href="#" id="comment"> 채팅:${bv.bookComment}</a>조회:${bv.bookLook}</td></tr>
+  				
   			</table>
 		<br><hr>
   		</article> 	

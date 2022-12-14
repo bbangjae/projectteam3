@@ -2,8 +2,8 @@
 
 * *{margin:0; padding:0}
  @font-face {
-    font-family: 'BMDOHYEON';
-    src: url('http://pop.baemin.com/fonts/dohyeon/BMDOHYEON_ttf.ttf');
+    font-family: Georfia
+    
 }
 body{
 	background-image:url(../lib/bgPattern.PNG);

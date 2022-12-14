@@ -25,6 +25,12 @@
   		SELECT * FROM bookinfo WHERE bookId=#{bookId}
   		
   	</select> 
+  	<!-- bookview 가져오기 -->
+  	<select id="howManyLook" parameterType="string"
+   							resultType="com.spring_boot.projectTeam.model.BookViewVO">
+  							
+  		SELECT * FROM bookview WHERE bookId=#{bookId}						
+  	</select>
 
   	</mapper>	
   		

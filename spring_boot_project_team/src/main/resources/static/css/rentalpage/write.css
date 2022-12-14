@@ -1,20 +1,34 @@
 @charset "UTF-8";
 
 ul{list-style: none}
-
-#profile{
-	width:400px;
+#writerBF{
+	
+}
+#profileBF{
+	width:200px;
 	height:50px;
 	
 	
 }
-#pLogo{
-	margin-right:10px;
+#pLogoBF{
+	
+	margin-right:2px;
 	float:left;
 	
-	
+}
+#pfContent ul li{
+	font-size:12px;
+	font-family: arial;
+	text-align:left;
 }
 
-#pfContent .ID{
+#pfContent .IDBF{
+	font-size:15px;
 	font-weight:bold;
+	
+	padding-top:5px;
+	padding-bottom:5px;
+	font-family:Georfia;
+	
+	
 }
