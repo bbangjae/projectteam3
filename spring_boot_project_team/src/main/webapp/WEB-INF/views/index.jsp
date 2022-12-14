@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -97,7 +97,7 @@
 							</div>
 						</div>
 						<div id="bookslot1">
-							<a href="<c:url value='/book/bookDetailView/${데이터}'/>">
+							<a href="<c:url value='/book/bookDetailView/데이터'/>">
 							<img src="image/데이터.jfif" class="booklist"></a>
 							<div id="listExplain" class="prtext">
 								<h1>
