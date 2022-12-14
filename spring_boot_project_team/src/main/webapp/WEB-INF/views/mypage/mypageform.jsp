@@ -48,7 +48,7 @@
 							</td>
 							<td id="blk"></td>
 							<td class="pofileBlk">
-							<div id="registNum"class="mypageNum">0</div>
+							<div id="registNum"class="mypageNum">${bookList0 }</div>
 							등록 도서
 							</td>
 							<td class="pofileBlk">

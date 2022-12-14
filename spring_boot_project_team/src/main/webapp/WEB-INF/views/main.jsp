@@ -35,7 +35,7 @@
 					<ul class="menuBox">
 						<li><a href="rental/rental.html" class="menuBox1">대여</a></li>
 						<li><a href="month/subpage_recommend.html" class="menuBox2">이달의 책</a></li>
-						<li><a href="mypage/mypage.html" class="menuBox2">내 서재</a></li>
+						<li><a href="book/bookstat" class="menuBox2">내 서재</a></li>
 					</ul>
 					<ul>
 						<li><a href="login/login2.html">로그인</a></li>
