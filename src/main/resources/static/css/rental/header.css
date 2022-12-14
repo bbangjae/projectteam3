@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**/
+
+
+#headerpanel {
+	position: fixed;
+	background: transparent;
+	width: 100%;
+	text-align:center;
+}
+
+#headerBox {
+	margin: 0px auto 0px auto;
+	width: auto;
+	height: 100px;
+	background: #f5f6f7;
+}
+
+#logoBox{
+	display: flex;
+	height:100%;
+	align-items: center;
+	float: left;
+	
+}
+
+#topMenuBox {
+	float:right;
+	padding:59px 30px 59px 0px;
+}
+
+#topMenuBox input{
+	width:250px;
+	height:30px;
+}
