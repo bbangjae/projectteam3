@@ -11,7 +11,7 @@
   		<result property="bookAuthor"  column="bookAuthor"  />
   		<result property="bookPublish"  column="bookPublish"  />
   		<result property="bookPrice"  column="bookPrice"  />
-  		<result property="bookDate"  column="bookDate"  />
+  		<result property="rentP"  column="rentP"  />
   		<result property="bookctg"  column="bookctg"  />
   		<result property="bookImg"  column="bookImg"  />
   		<result property="bookDis"  column="bookDis"  />
@@ -36,9 +36,11 @@
 	</select>
 	
 	<insert id="insertBook" parameterType="com.spring_boot.projectTeam.model.BookInfoVO_b">
-		INSERT INTO bookInfo (bookId, memId, bookName, bookAuthor, bookPublish, bookPrice, bookDate, bookctg, bookImg, bookDis)
-		VALUES (#{bookId}, #{memId}, #{bookName}, #{bookAuthor}, #{bookPublish}, #{bookPrice}, #{bookDate}, #{bookctg}, #{bookImg}, #{bookDis})
+		INSERT INTO bookInfo (bookId, memId, bookName, bookAuthor, bookPublish, bookPrice, rentP, bookctg, bookImg, bookDis)
+		VALUES (#{bookId}, #{memId}, #{bookName}, #{bookAuthor}, #{bookPublish}, #{bookPrice}, #{rentP}, #{bookctg}, #{bookImg}, #{bookDis})
 	</insert>
+	
+	
 
   
 </mapper>
