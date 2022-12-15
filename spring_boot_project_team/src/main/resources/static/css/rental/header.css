@@ -7,6 +7,8 @@
 	background: transparent;
 	width: 100%;
 	text-align:center;
+	
+
 }
 
 #headerBox {
@@ -22,6 +24,10 @@
 	align-items: center;
 	float: left;
 	
+	@font-face {
+    font-family: 'GmarketSans';
+	url:('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+}
 }
 
 #topMenuBox {
