@@ -6,6 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>대여 페이지</title>
+	
 	<c:import url="/WEB-INF/views/layout/head.jsp" />
 
 	<script src="jquery-3.6.1.min.js"></script>

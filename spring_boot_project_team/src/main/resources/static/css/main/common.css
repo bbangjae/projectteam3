@@ -73,3 +73,27 @@ body{
    border:solid 1px black;
    border-bottom:solid 0px black;
 }
+#ourment{
+	width: 1280px;
+    margin: 0px auto;
+    text-align: left;
+}
+#mainment{
+	font-size:40px;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+#mainmenttitle{
+	font-size: 90px;	
+	font-family: 'GmarketSans';
+	url:('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+	font-weight: lighter;
+	margin-top: 40px;
+	margin-left: 70px;
+}
+
+#mainsubment{
+	font-size:20px;
+	margin-top: 30px;
+	
+}

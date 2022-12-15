@@ -4,11 +4,12 @@
    height:100px;
    z-index:1000;
    background: #f5f6f7;
-   font-family:Georfia;
   
-   
-   
+    font-family: 'GmarketSans';
+	url:('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+
 }
+
 #header{
     width:1280px;
     height:100px;
@@ -22,29 +23,35 @@
 
 #logoBox{
     float:left;
-    width: 1050px;
+    width: 1280px;
 }
 .menuBox{
-	display:flex;
+   display:flex;
 }
 .catemenu123{
-	width:480px;
+   width:1100px;
 }
 
 .loginmenu123{
    position: relative;;
    display:inline-block;
-   right:auto;
-   margin-left:25%;
-   width:500px;
-	
+   margin-left:15%;
+   width:600px;
+   
+}
+#mainname{
+	font-size: 40px;
+	color:black;
+    width:120px;
+    font-weight: lighter;
+    margin-top:50px;
+    text-decoration: none;
 }
 
-
-#logoBox  a{
-    font-size:21px;
+#subname{
+    font-size:23px;
     color:black;
-    font-weight: bold;
+    font-weight: initial;
     width:100px;
     display:inline-block;
     margin-top:50px;

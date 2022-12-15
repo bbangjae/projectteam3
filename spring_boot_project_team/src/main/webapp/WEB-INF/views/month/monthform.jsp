@@ -7,10 +7,10 @@
 <meta charset="UTF-8">
 <meta name="Viewport" content="width=device-width, initial-scale=1.0">
 <title>독서관_이달의 책 추천</title>
-<link rel="stylesheet" type="text/css" href="<c:url value='/css/month/recommend.css'/>">
-<script src="<c:url value='js/jquery-3.6.1.min.js'/>" ></script>
 
-<script src='<c:url value="/js/recommend.js"/>'> </script>
+<script src="<c:url value='js/jquery-3.6.1.min.js'/>" ></script>
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/month/recommend.css'/>">
+<script src='<c:url value="js/recommend.js"/>'> </script>
 </head>
 
 <body>
