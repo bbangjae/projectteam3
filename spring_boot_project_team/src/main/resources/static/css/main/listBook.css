@@ -7,11 +7,25 @@
 	line-height: 50px;
 }
 
-#listBook {
-	width: 1000px;
-	height: 520px;
-	text-align: center;
-	overflow: hidden;
+#listBook{
+   margin:0px auto 0px auto;
+   padding-left: 500px;
+   padding-top:50px;
+   width: 1000px;
+   height: 520px;
+   text-align: center;
+   overflow: hidden;
+}
+#newbookslide{
+	height:800px;
+	background-color:rgb(226,223,220);
+}
+#newbookmaindiv{
+	padding-top:150px;
+    flex-direction: row;
+}
+#newbookmainTitle{
+	width: 200px;
 }
 
 #pNButtonBox {
@@ -21,16 +35,16 @@
 
 #pButton {
 	position: absolute;
-	top: 210px;
-	left: 4%;
+	top: 250px;
+	left: 8%;
 	opacity: 0.8;
 	cursor: pointer;
 }
 
 #nButton {
 	position: absolute;
-	top: 210px;
-	right: 4%;
+	top: 250px;
+	right: 8%;
 	opacity: 0.8;
 	cursor: pointer;
 }
