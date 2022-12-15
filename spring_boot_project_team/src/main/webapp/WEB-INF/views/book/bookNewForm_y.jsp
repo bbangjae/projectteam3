@@ -7,9 +7,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>도서 등록</title>
+				<c:import url="/WEB-INF/views/layout/head.jsp" />
 	</head>
 	<body>
 		<div id="wrap">
+			<c:import url="/WEB-INF/views/layout/top.jsp" />	
 			<h3>대여글쓰기</h3>
 			<hr>
 			<form method="post" action="<c:url value='/book/bookInsert'/>">

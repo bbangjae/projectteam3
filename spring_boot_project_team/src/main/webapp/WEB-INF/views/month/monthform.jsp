@@ -29,7 +29,7 @@
 					src='<c:url value="/lib/right.png"/>'>
 			</div>
 			<div id="hyper">
-				<a href="<c:url value='/'/>" id="hyperButton">바로 대여>></a>
+				<a href="<c:url value='/'/>" id="hyperButton">메인 페이지>></a>
 			</div>
 
 			<div id="limitbox">

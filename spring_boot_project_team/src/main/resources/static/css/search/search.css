@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@font-face {
+}	
+
+#title {
+    font-family:'GmarketSans';
+    font-weight: 10;
+	height:100px;
+	position:relative;
+	font-size: 5em;
+	line-height: 25px;
+	letter-spacing: 2px;
+	text: bottom;
+}
+
+#Searchbox {
+	
+}
