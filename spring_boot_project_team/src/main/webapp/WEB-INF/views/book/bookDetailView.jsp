@@ -62,7 +62,7 @@
   				<tr><td class="c2"><a href="#" id="bookLike">좋아요</a>:${bv.bookLike}<a href="#" id="comment"> 채팅:${bv.bookComment}</a>조회:${bv.bookLook}</td></tr>
   				
   			</table>
-  			<button type="submit" >거래 요청</button>
+  			<button type="submit" >대여 요청</button>
   			</form>
 		<br><hr>
   		</article> 	

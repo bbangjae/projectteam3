@@ -2,12 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <footer>
-		<article id="inspire">
-			<div id="write">
-				<div class="content" id="content">"I can do this all day."</div>
-				<div class="author" id="author">-Captain America-</div>
-			</div>
-		</article>
+		
 
 		<div id="footerBox">
 			<div class="bottomMenuBox">
