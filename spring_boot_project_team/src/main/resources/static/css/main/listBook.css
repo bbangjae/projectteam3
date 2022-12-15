@@ -5,15 +5,18 @@
 	height: 50px;
 	line-height: 50px;
 }
-
+#newbookslideDiv{
+	margin:0 auto;
+	width:1280px;
+}
 #listBook{
-   margin:0px auto 0px auto;
-   padding-left: 500px;
-   padding-top:50px;
-   width: 1000px;
-   height: 520px;
-   text-align: center;
-   overflow: hidden;
+ 	margin: 0px auto 0px auto;
+    padding-left: 210px;
+    padding-top: 50px;
+
+    height: 520px;
+    text-align: center;
+    overflow: hidden;
 }
 #newbookslide{
 	height:800px;
@@ -23,19 +26,17 @@
 	padding-top:150px;
     flex-direction: row;
 }
-#newbookmainTitle{
-	width: 200px;
-}
 
 #pNButtonBox {
-	position: relative;
+	position: absolute;
 	z-index: 10;
+	width: 800px;
 }
 
 #pButton {
 	position: absolute;
 	top: 250px;
-	left: 8%;
+	left: 85%;
 	opacity: 0.8;
 	cursor: pointer;
 }
@@ -43,7 +44,7 @@
 #nButton {
 	position: absolute;
 	top: 250px;
-	right: 8%;
+	right: 92%;
 	opacity: 0.8;
 	cursor: pointer;
 }
@@ -72,8 +73,8 @@
 }
 
 .booklist {
-	width: 180px;
-	height: 230px;
+	width: 150px;
+	height: 200px;
 	margin: 30px 35px 10px 35px;
 	line-height: 1.2;
 }
@@ -104,4 +105,60 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+#newbookmainTitle{
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top:300px;
+}
+#newbookmainTitle123{
+	font-size:30px;
+	
+}
+#newbookmainTitle456{
+	font-size:18px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	font-family: 'GmarketSans';
+    url: ('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+    font-weight: 500;
+}
+#k2l3j4{
+	height:150%;
+    width:65%;
+    background-color: rgb(174, 165, 157);
+    border: none;
+    color:#fff;
+    font-size: 18px;
+    outline:none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+/* mypageimagesec */
+#k32hbi{
+	width:1280px;
+	margin:0 auto;
+}
+#kh12jn{
+	width: 500px;
+	text-align:right;
+	padding-top:250px;
+}
+#ljn21j{
+	font-size:30px;
+}
+#k1jn4{
+	padding-top:40px;
+	font-size:18px;
+	font-family: 'GmarketSans';
+    url: ('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+    font-weight: 500;
+}
+#k12jnoh{
+	padding-top:15px;
+	font-size:18px;
+	font-family: 'GmarketSans';
+    url: ('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+    font-weight: 500;
 }

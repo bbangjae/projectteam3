@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 #bookLent{
-   margin:200px auto 100px auto;
+   margin:110px auto 100px auto;
    width:1280px;
-   height:800px;
+   height:700px;
 }
 
 #bookslot{
@@ -43,7 +43,7 @@
 	margin-right: -500px;
 }
 #bookheaderTitle{
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom:20px;
 	
 }
@@ -52,8 +52,11 @@
 	
 }
 #bookheaderment{
-	font-size: 25px;
+	font-size: 18px;
 	padding-top: 15px;
+	font-family: 'GmarketSans';
+    url: ('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+    font-weight: 500;
 }
 
 

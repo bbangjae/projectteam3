@@ -1,46 +1,92 @@
 @charset "UTF-8";
 
 #inspire{
-   	width:1280px;
-	padding-top : 100px;
-	height:200px;
+   	width:100%;
+	height:400px;
 	text-align:center;
-	line-height:30px;
 	color:white;
-	background:linear-gradient(rgba(0, 0, 0) 30%,
-		rgba(0, 0, 0,1) 90%, rgb(174, 165, 157) 100%);
-   	font-weight:normal;
+	background-color: skyblue;
+   
 }
-
-
-
+#write{
+	font-family: 'GmarketSans';
+	url:('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+	width:1000px;
+	margin:0px auto;
+	padding-top : 150px;
+	font-weight:normal;
+   	font-size: 25px;
+   	line-height:40px;
+}
+#author{
+	margin-top:15px;
+	font-size: 30px;
+}
+#footerBox{
+	width:100%;
+	height:500px;
+	background-color: rgb(220, 216,212);
+	text-align:center;
+}
 .bottomMenuBox{
-   text-align:center;
-   height:100px;
-   background-color:rgb(174, 165, 157);
+	padding-top:100px;
+	width:100%;
 }
-
-.bottomMenuBox ul li{
-   
-   display:inline-block;
-   text-align:center;
-   padding:5px;
-   margin:20px;
-   
-   
-   
+#botttomMenuItem{
+	display: flex;
+	margin-left:25%;
+	font-size: 15px;;
 }
-
-.bottomMenuBox ul li a{
-   color:rgb(245, 246, 247);
-   font-weight:bold;
-   text-decoration:none;
+#botttomMenuItem1{
+	display: flex;
+	text-align:center;
+	width:200px;
+	list-style:none;
 }
-
-
-.bottomMenuBox li img{
-   margin-left:10px;
-   width:20px;
-   height:20px;
-   background-color:rgb(174, 165, 157);
+#botttomMenuItem2{
+	display: flex;
+	text-align:center;
+	width:200px;
+	list-style:none;
+	margin-left: 80px;
+}
+#botttomMenuItem1 ul li a, #botttomMenuItem2 ul li a{
+	line-height:40px;
+	text-decoration-line: none;
+	
+}
+#botttomMenuItem1 ul li, #botttomMenuItem2 ul li{
+	margin-top: 20px;
+	list-style:none;
+}
+#botttomMenuItem3{
+	margin-left:20%;
+}
+#k2ml2{
+	margin-top: 20px;
+	width: 110px;
+    height: 26px;
+    background-color: #eee;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 15%;
+    color:darkgoldenrod;
+}
+#k2ml3{
+	width: 110px;
+    height: 26px;
+    margin-top: 20px;
+    background-color: #eee;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 15%;
+    color:darkgoldenrod;
+}
+#footerment{
+	font-family: 'GmarketSans';
+	url:('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+	
+	width:1280px;
+	padding: 100px;
+	text-align: center;
 }

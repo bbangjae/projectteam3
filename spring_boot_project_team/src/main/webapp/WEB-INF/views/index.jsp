@@ -107,24 +107,35 @@
 						</c:if>
 					</div>
 					<div id="bookheadermentTitle">
-						<div id="bookheaderment"> 근처 회원들의 등록 도서입니다</div>
-						<div id="bookheaderment"> 관심 도서 대여를 시도해보세요!</div>
+						<div id="bookheaderment"> 근처 회원들의 등록 도서</div>
+						<div id="bookheaderment"> 관심 도서 대여를 시도해보세요</div>
 					</div>
 				</div>
 			</article>
 			 
 			<div id="newbookslide">
+			<div id="newbookslideDiv" style="display: flex;">
 			
-			<article id="listBook">
+				<div id="newbookmainTitle" style="display: flex; flex-direction: column;">
+					<div id="newbookmainTitle123">	
+						최근 등록된 도서
+					</div>
+					<div id="newbookmainTitle456">
+						내 서재 에서 편하게 책을 등록해요
+					</div>
+					<div>
+						<button type="button" id="k2l3j4" onclick="location.href='<c:url value='/mypage/mypageform'/>'"> 내 서재 바로가기 </button>
+					</div>
+				</div>
+			<article id="listBook" style="display: flex;">
+				
 				<div id="pNButtonBox">
-					<img id="pButton" src="image/prevButton.png"> 
-					<img id="nButton" src="image/nextButton.png">
+					<img id="pButton" src="image/nextButton.png"> 
+					<img id="nButton" src="image/prevButton.png">
 				</div>
 				<div id="newbookmaindiv">
 				
-					<div id="newbookmainTitle">
-						 신규 등록 도서
-					</div>
+					
 					<div id="listPanel">
 						<div id="bookSlide">
 	
@@ -234,10 +245,26 @@
 				</div>
 			</article>
 			</div>
+			</div>
+		</section>
+		<section id="mypageimagesec">
+			<div id="k32hbi" style="display: flex;">
+				<div id="kb342hb" style="display: flex;">
+					<img src="image/mypageimage.png" id="mypageimage">
+				</div>
+				<div id="kh12jn" style="display: flex;flex-direction: column;">
+					<div id="ljn21j" >
+						 내 서재 둘러보기 
+					</div>
+					<div id="k1jn4">
+						내 서재 에서 간편하게 도서등록과 
+					</div>
+					<div id="k12jnoh">
+						도서 대여를 해요.
+					</div>	
+				</div>
 
-
-
-
+			</div>
 		</section>
 		<!--  bottom -->         
         	<c:import url="/WEB-INF/views/layout/bottom.jsp" />
