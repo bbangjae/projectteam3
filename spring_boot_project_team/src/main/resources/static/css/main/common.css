@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 
 * *{margin:0; padding:0}
 @font-face {
@@ -29,9 +29,7 @@ body{
    text-align:center;
    background:white;
 }
-#indexSlideNav{
-	background-color:rgb(226, 223, 220) ;
-}
+
 #slideshow{
    margin: 120px auto 50px auto;
    width:1280px;
@@ -46,23 +44,8 @@ body{
    border:solid 1px black;
    
 }
-#bookLent{
-   
-   margin:0px auto;
-   width:1000px;
-   height:1000px;
-   border:solid 1px white;
-   
-   
-}
-#listBook{
-   margin:0px auto;
-   width:1000px;
-   height:700px;
-   border:solid 1px black;
-   
-   /* overflow:hidden; */
-}
+
+
 #inspire{
    margin:0px auto;
    width:1280px;
@@ -73,15 +56,20 @@ body{
    border:solid 1px black;
    border-bottom:solid 0px black;
 }
+#mainmentback{
+	background-color: rgb(226, 223, 220) ;
+	height:800px;
+}
 #ourment{
 	width: 1280px;
-    margin: 0px auto;
+    margin: 200px auto 0px auto;
     text-align: left;
 }
 #mainment{
 	font-size:40px;
 	margin-top: 15px;
 	margin-left: 25px;
+    padding-top: 250px;
 }
 #mainmenttitle{
 	font-size: 90px;	
@@ -90,10 +78,31 @@ body{
 	font-weight: lighter;
 	margin-top: 40px;
 	margin-left: 70px;
+	letter-spacing: -2.4px;
 }
-
 #mainsubment{
-	font-size:20px;
+	font-size:21px;
+	margin-left:74px;	
 	margin-top: 30px;
-	
+    line-height: 1.8;
+    font-family: 'GmarketSans';
+	url:('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
+	font-weight: 500;
 }
+#mentimgdata{
+    float: right;
+    margin-top: -230px;
+    margin-right: 100px;
+}
+#mentimgjava{
+    float: right;
+    margin-top: -350px;
+    margin-right: -80px;
+}
+img#mentbooklist{
+	width:220px;
+	height:280px;
+	border: 1px solid rgb(226, 223, 220);
+    border-radius: 20%	
+}
+ 
