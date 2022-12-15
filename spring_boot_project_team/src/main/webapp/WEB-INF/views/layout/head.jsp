@@ -11,16 +11,14 @@
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/top.css"/>'>
 
 
-
-<script src="js/jquery-3.6.1.min.js"></script>
-<script src="js/slideShow.js"></script>
-<script src="js/subMenu.js"></script>
-<script src="js/tabMenu.js"></script>
-<script src="js/listBook.js"></script>
-<script src="js/index.js"></script>
-<script src="js/login_signup.js"></script>
-<script src="js/login.js"></script>
-<script src="js/mypage.js"></script>
-<script src="js/recommend.js"></script>
-<script src="js/reg.js"></script>
-<script src="js/searchZip.js"></script>
+<script src="<c:url value='/js/jquery-3.6.1.min.js'/>" ></script>
+<script src="<c:url value='/js/slideShow.js'/>"></script>
+<script src="<c:url value='/js/subMenu.js'/>"></script>
+<script src="<c:url value='/js/tabMenu.js'/>"></script>
+<script src="<c:url value='/js/listBook.js'/>"></script>
+<script src="<c:url value='/js/index.js'/>"></script>
+<script src="<c:url value='/js/login_signup.js'/>"></script>
+<script src="<c:url value='/js/login.js'/>"></script>
+<script src="<c:url value='/js/recommend.js'/>"></script>
+<script src="<c:url value='/js/reg.js'/>"></script>
+<script src="<c:url value='/js/searchZip.js'/>"></script>
