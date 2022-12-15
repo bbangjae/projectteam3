@@ -3,11 +3,7 @@
 *{margin:0; padding:0}
 
 
-body{
-	background-image:url(../../lib/bgPattern.PNG);
-	background-size:50%;
-	background-repeat:repeat;
-}
+
 #wrap{
 	margin:0px auto;
     width:1280px;
