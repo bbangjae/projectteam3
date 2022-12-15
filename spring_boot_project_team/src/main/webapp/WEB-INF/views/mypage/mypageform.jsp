@@ -62,6 +62,7 @@
 								<div id="padleft">
 									<div id="onecol1" ><h3 class="toCenter" >등록된 도서</h3>
 									<button type="button"  id="addButton" onclick="location.href='<c:url value='/book/bookNewForm'/>'">+ 추가 등록</button>
+								
 								</div>
 								</div>
 							</td>
