@@ -1,9 +1,12 @@
 package com.spring_boot.projectTeam.controller;
 
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring_boot.projectTeam.model.BorrowVO;
@@ -18,11 +21,12 @@ public class BorrowController {
 	@Autowired
 	BorrowService service;
 	
-	@RequestMapping("/deal/dealList/{bookId}")
-	public String dealList(@PathVariable String bookId, Model model, BorrowVO borrow) {
+	@RequestMapping("/deal/dealList")
+	public String dealList(HttpSession session, Model model, BorrowVO borrow) {
 		
+		String memId = (String) session.getAttribute("sid");
 		
-		BorrowVO borrowList = service.borrowList("bookId");
+		ArrayList<BorrowVO> borrowList = service.borrowList(memId);
 		
 		model.addAttribute("borrowList",borrowList);
 		 

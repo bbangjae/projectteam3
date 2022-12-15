@@ -24,17 +24,35 @@
 			<div id= "Searchbox">
 				<form id="bookSearchFrm">
 					<select id="type" name="type">
-						<option value="">검색 조건 선택</option>
-						<option value="bookName">책이름</option>
+						<option value="bookName">도서명</option>
 						<option value="bookctg">카테고리</option>
 					</select>
 					 <input type="text" name="keyword">
 					  <input type="submit" value="검색">
-					  
 				</form>
 			</div>
 		</div>
-
+		<div id="bookAllList">
+				<h3>전체 상품 조회</h3>
+				<table border="1">
+					<tr>
+						<th>상품번호</th>
+						<th>상품명</th>
+						<th>가격</th>
+						<th>제조사</th>
+						<th>재고</th>
+					</tr>
+					<c:forEach var="bk" items="${bookAllList }">
+			            <tr>
+			               <td><a href="<c:url value='/'/>" >${bk.bookId }</a></td>
+			               <td>${bk.bookName }</td>
+			               <td>${bk.bookName }</td>
+			               <td>${bk.bookName }</td>
+			               <td>${bk.bookName }</td>			               
+			            </tr>
+			         </c:forEach>
+				</table>
+			</div>
 		<!-- 검색 결과 출력  -->
 		<div id="searchResultBox"></div>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

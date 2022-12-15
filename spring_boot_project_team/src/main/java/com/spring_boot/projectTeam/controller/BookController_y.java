@@ -24,16 +24,20 @@ public class BookController_y {
 	@Autowired
 	BookInfoService_y service;
 	
-	@RequestMapping("/book/bookListAll")
-	public String viewbookListAll(Model model) {
-		
-		ArrayList<BookInfoVO_b> bookList = service.listAllBook();
-		model.addAttribute("bookList", bookList);
-		return "book/bookAllListView_y";
-	}
+//	@RequestMapping("/book/bookListAll")
+//	public String viewbookListAll(Model model) {
+//		
+//		ArrayList<BookInfoVO_b> bookList = service.listAllBook();
+//		model.addAttribute("bookList", bookList);
+//		return "book/bookAllListView_y";
+//	}
 	
 	@RequestMapping("/book/bookSearchForm")
-	public String bookSearchForm() {
+	public String bookSearchForm(Model model) {
+		
+		ArrayList<BookInfoVO_b> bookAllList = service.listAllBook();
+		model.addAttribute("bookAllList", bookAllList);
+		
 		return "book/bookSearchForm_y";
 	}
 	
