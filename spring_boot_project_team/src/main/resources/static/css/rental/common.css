@@ -10,7 +10,6 @@ html, body {
 }
 #wrap{
    font-family: 'BMDOHYEON';
-   
    margin:0px auto;
    width:1280px;
    height:100%;
@@ -57,5 +56,4 @@ html, body {
 	margin:3020px 0 0 150px;
 	z-index:100000;
 }
-
 

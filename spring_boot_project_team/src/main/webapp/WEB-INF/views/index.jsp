@@ -42,33 +42,17 @@
 
 
 			</article>
-			<!-- ********** slideshow 부분 끝 ********* -->
-
-			<!-- <article id="tab">
-				<div id="tabWrite">
-					<table>
-						<tr>
-							<th><a href="rental/rental.html"><img
-									src="image/learning.png"></a></th>
-							<th><a href="month/subpage_recommend.html"><img
-									src="image/conversation.png"></a></th>
-							<th><a href="mypage/mypage.html"><img
-									src="image/book.png"></a></th>
-						</tr>
-						<tr>
-							<th><a href="rental/rental.html">대여</a></th>
-							<th><a href="month/subpage_recommend.html">이달의 책</a></th>
-							<th><a href="mypage/mypage.html">내 서재</a></th>
-						</tr>
-					</table>
-				</div>
-
-
-			</article> -->
-			<!-- ********** tab 부분 끝 ********* -->
+			
 
 		</nav>
 		<!-- ********** nav 부분 끝 ********* -->
+		<section id="ourment">
+			<div id="mainment"> 도서 공유 플렛폼 </div>
+			<div id="mainmenttitle">"독서관"</div>
+			<div id="mainsubment"> 대여하기 버튼으로 주변 회원과 소통하고 대여해요</div> 
+			
+			
+		</section>
 		
 		<section>
 			
