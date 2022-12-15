@@ -79,4 +79,19 @@
   	<delete id="requestallDelete" parameterType="string">
 		DELETE FROM request WHERE bookId=#{bookId}
 	</delete>
+	
+	<select id="tradeGiver" parameterType="string" resultType="com.spring_boot.projectTeam.model.BorrowVO">
+		SELECT borrow.taker, bookInfo.bookName, borrow.giveNo, borrow.takeNo
+		FROM borrow
+		INNER JOIN bookInfo
+		ON borrow.giver=#{memId} AND borrow.bookId=bookInfo.bookId
+	</select>
+	
+	<select id="tradeTaker" parameterType="string" resultType="com.spring_boot.projectTeam.model.BorrowVO">
+		SELECT borrow.giver, bookInfo.bookName, borrow.giveNo, borrow.takeNo
+		FROM borrow
+		INNER JOIN bookInfo
+		ON borrow.taker=#{memId} AND borrow.bookId=bookInfo.bookId
+	</select>
+	
 </mapper>

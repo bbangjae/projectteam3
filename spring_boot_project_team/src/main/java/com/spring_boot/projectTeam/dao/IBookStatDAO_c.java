@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.spring_boot.projectTeam.model.BookInfoVO_b;
+import com.spring_boot.projectTeam.model.BorrowVO;
 import com.spring_boot.projectTeam.model.RequestVO;
 
 public interface IBookStatDAO_c {
@@ -18,4 +19,6 @@ public interface IBookStatDAO_c {
 	public void borrowInsert(HashMap<String, Object> map);
 	public void requestDelete(HashMap<String, Object> map);
 	public void requestallDelete(String bookId);
+	public ArrayList<BorrowVO> tradeGiver(String giver);
+	public ArrayList<BorrowVO> tradeTaker(String taker);
 }
