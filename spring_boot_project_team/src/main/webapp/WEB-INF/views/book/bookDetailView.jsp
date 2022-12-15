@@ -43,6 +43,7 @@
   	<hr>
   	<section>
   		<article id="contentBF">
+  		<form id="detailForm" name="detailForm">
   			<table id="cTable" >
   				<tr><th>${bk.bookName} </th></tr>
   				<tr><td class="c1">저자:${bk.bookAuthor } / 출판사: ${bk.bookPublish }</td></tr>
@@ -59,7 +60,8 @@
   				<tr><td class="c2"><a href="#" id="bookLike">좋아요</a>:${bv.bookLike}<a href="#" id="comment"> 채팅:${bv.bookComment}</a>조회:${bv.bookLook}</td></tr>
   				
   			</table>
-  			<button type="button" >채팅하기</button>
+  			<button type="button" >거래 요청</button>
+  			</form>
 		<br><hr>
   		</article> 	
    		

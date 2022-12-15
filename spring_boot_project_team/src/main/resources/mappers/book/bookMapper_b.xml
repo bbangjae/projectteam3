@@ -31,7 +31,7 @@
   							
   		SELECT * FROM bookview WHERE bookId=#{bookId}						
   	</select>
-
+	
   	</mapper>	
   		
   		
