@@ -15,4 +15,6 @@ public interface IBookStatService_c {
 	public ArrayList<BookInfoVO_b> statListBox3(String memId);
 	public ArrayList<RequestVO> requestallList(String memId);
 	public void requestInsert(String memId, String bookId);
+	public void borrowInsert(String bookId, String applicant, String memId);
+	public void requestDelete(String bookId, String applicant);
 }

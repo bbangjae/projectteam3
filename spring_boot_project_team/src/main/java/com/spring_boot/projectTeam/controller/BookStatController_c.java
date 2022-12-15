@@ -48,16 +48,34 @@ public class BookStatController_c {
 		ArrayList<RequestVO> requestList = service.requestallList(memId);
 		model.addAttribute("requestList", requestList);
 		
-		return "mypage/mypageform";
+		return "book/test";
 	}
 	@RequestMapping("/request/insert/{bookId}")
 	public String requestinsert(@PathVariable String bookId, RequestVO vo, HttpSession session, Model model) {
 		
 		String memId = (String)session.getAttribute("sid");
-		
 		service.requestInsert(memId, bookId);
 		
 		return "redirect:/book/bookDetailView/{bookId}";
+	}
+	
+	@RequestMapping("/request/accept/{bookId}/{applicant}")
+	public String accept(@PathVariable String bookId, @PathVariable String applicant, HttpSession session) {
+		
+		String memId = (String)session.getAttribute("sid");
+		
+		service.borrowInsert(bookId, applicant, memId);
+		
+		return "redirect:/mypage/mypageform";
+	}
+	
+	@RequestMapping("/request/refuse/{bookId}/{applicant}")
+	public String refuse(@PathVariable String bookId, @PathVariable String applicant) {
+		
+		
+		service.requestDelete(bookId, applicant);
+		
+		return "redirect:/mypage/mypageform";
 	}
 	
 }

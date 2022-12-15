@@ -15,5 +15,7 @@ public interface IBookStatDAO_c {
 	public ArrayList<BookInfoVO_b> statListBox3(String memId);
 	public ArrayList<RequestVO> requestallList(String memId); // 요청 목록 보기
 	public void requestInsert(HashMap<String, Object> map);
-	
+	public void borrowInsert(HashMap<String, Object> map);
+	public void requestDelete(HashMap<String, Object> map);
+	public void requestallDelete(String bookId);
 }
