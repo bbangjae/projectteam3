@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+
+img{
+	width:100px;
+	height:80px;
+}
+
+#dealtable{
+	margin:auto;
+	width:800px;
+	height:100px;
+	margin-top:100px;
+	padding:0px;
+	border-bottom:solid 1px;
+}
+#dealtable .profile {
+	
+	text-align:center;
+	height:200px;		
+}
+#dealtable .profile div{
+	
+	float:left;
+	width:130px;
+	
+	padding-top:30px;
+	height:90px;
+	/* border:solid 3px red; */ 
+	
+}
+ #dealtable .profile div:nth-child(1){
+	
+	margin-bottom:10px;
+	
+}
+ #dealtable .profile div:nth-child(3){
+	
+	width:200px;
+	text-align:left;
+	
+}
+
+ #dealtable .profile div:nth-child(2){
+	
+	padding:0px;
+	width:200px;
+	
+	height:130px;
+	
+}
+
+#dealtable .profile img{
+	border-radius:50%;
+	height:120px;
+}
+#dealtable th{
+	width:300px;
+	height:100px;
+	
+	}
+
+
+#dealtable td{
+	
+	text-align:left;
+	width:800px;
+	float:left;
+	padding:20px 20px 20px 20px;
+	/* border-bottom:solid 1px black; */
+	
+}
+#dealtable td img{
+	
+	float:left;
+
+	margin-right:10px;
+}
+#dealtable td div{
+	
+	
+	width:100px;
+	height:100px;
+	float:left;
+	/* border:solid 3px red; */
+	margin-right:10px;
+	inline-height:0px;
+}
+
+#dealtable td div:nth-child(2){
+	width:550px;
+	margin-right:10px;
+}
+#dealtable td div input{
+	margin-bottom:10px;
+	width:100px;
+}
+#nav{
+	border-top:solid 1px;
+	border-bottom:solid 1px;
+}

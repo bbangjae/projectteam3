@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('http://pop.baemin.com/fonts/dohyeon/BMDOHYEON_ttf.ttf');
+}	
+
+#wrap{
+    font-family: 'BMDOHYEON';
+	width:auto;
+	height:auto;
+	margin: 0 auto 0 auto;
+	background-color: rgb(245, 246, 247);
+	padding:0px;
+}
+
+/* ------------------navigate------------------------- */
+#navTop{
+	height:200px;
+}
+#navBottom{
+	height:10%;
+}
+
+#myStatus{
+	width:auto;
+	height:auto;
+}
+
+#abc{
+	width:50px;
+    height:50px;
+    border-radius:70%;
+    overflow:hidden;
+    border:solid 3px;
+}
+
+#table1 {
+	margin:0px auto 0px auto;
+	text-align:center;
+}
+
+#blk{
+	width:25%;
+}
+
+.mypageNum{
+	font-size:30px;
+}
+
+.pofileBlk{
+	width:15%;
+}
+
+#namesize{
+	width:200px;
+}
+#blkPro{
+	width:3px;
+}
+
+/* ------------------navigate------------------------- */
+
+
+/* ------------------section------------------------- */
+h3, h2{
+	text-align:left;
+}
+#point{
+	font-size: 15px;
+}
+
+
+#table2 {
+	width:auto;
+	height:auto;
+}
+#padleft{
+	margin:10px;
+	height:50px;
+	border:solid 4px rgb(155, 111, 72);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#padright{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	height:50px;
+	border:solid 4px rgb(155, 111, 72);
+	margin:10px;
+}
+.myAlign{
+	text-align:left;
+	vertical-align:top;
+	padding:10px;
+}
+#addButton{
+	margin-left:375px;
+	position:absolute;
+	margin-top:-30px;
+    background-color: rgb(174, 165, 157);
+    /* border: none; */
+    color:#fff;
+    font-size: 15px;
+    outline:none;
+    border:solid 1px;
+}
+#addpointbtn{
+	background-color: rgb(174, 165, 157);
+	outline:none;
+	border:solid 1px ;
+}
+
+.rightAlign{
+	float:right;
+}
+.RowAlign{
+	height:28px;
+	line-height:25px;
+	padding:10px;
+}
+/* ----------------------------------- */
+#onecol{
+	width:500px;
+	height:50px;
+}
+#twocol{
+	width:500px;
+	height:50px;
+}
+.toCenter{
+	text-align:center;
+	margin-top: 15px;
+}
+a{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+}
+
+a:hover{
+	text-decoration:none;
+	color:red;
+	font-weight:bold;
+}
+#regcolor{
+	border:solid 4px rgb(155, 111, 72);
+	height:500px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: rgb(232, 234, 236);
+}
+
+#rencolor{
+	border:solid 4px rgb(155, 111, 72);
+	height:500px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: rgb(232, 234, 236);
+}
+
+.bookInfo, .regist{
+	font-weight:bold;
+}
+#bookMa{
+	width: 1280px;
+	margin: 20px auto;
+}
+#bookh3{
+	font-size: 25px;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 15%;
+    padding-top: 15px;
+}
+#bookpoint{
+	
+   
+    text-align: right;
+    padding-right: 15%;
+    padding-top: -50px;
+}
+

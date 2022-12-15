@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace= "com.spring_boot.projectTeam.dao.IBookStatDAO_c">
+	<resultMap id="bookResult" type="com.spring_boot.projectTeam.model.mybookVO" >
+  		<result property="memId"  column="memId"  />
+  		<result property="stats"  column="stats"  />
+  		<result property="bookId"  column="bookId"  />
+  	</resultMap>
+  	
+	<resultMap id="bookInfoResult" type="com.spring_boot.projectTeam.model.BookInfoVO_b" >
+  		<result property="bookId"  column="bookId"  />
+  		<result property="memId"  column="memId"  />
+  		<result property="bookName"  column="bookName"  />
+  		<result property="bookAuthor"  column="bookAuthor"  />
+  		<result property="bookPublish"  column="bookPublish"  />
+  		<result property="bookctg"  column="bookctg"  />
+  		<result property="bookImg"  column="bookImg"  />
+  		<result property="bookDis"  column="bookDis"  />
+  	
+  	</resultMap>
+  	
+	<!--  보유중인 도서 확인-->
+	<select id="statList0" parameterType="String" resultType="int">
+		SELECT count(*) FROM mybook WHERE stats=0 and memId=#{memId}	
+	</select>
+	<select id="statList2" parameterType="String" resultType="int">
+		SELECT count(*) FROM mybook WHERE stats=2 and memId=#{memId}	
+	</select>
+	<select id="statList3" parameterType="String" resultType="int">
+		SELECT count(*) FROM mybook WHERE stats=3 and memId=#{memId}	
+	</select>
+	
+	<select id="statListBox1" parameterType="string" resultType="com.spring_boot.projectTeam.model.mybookVO">
+		SELECT mybook.memId, bookInfo.bookName, bookInfo.bookAuthor 
+		FROM mybook 
+		INNER JOIN bookInfo 
+		ON mybook.memId=bookInfo.memId AND mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
+		WHERE stats=0
+	</select>
+	
+	<select id="statListBox2" parameterType="string" resultType="com.spring_boot.projectTeam.model.mybookVO">
+		SELECT mybook.memId, bookInfo.bookName, bookInfo.bookAuthor 
+		FROM mybook 
+		INNER JOIN bookInfo 
+		ON mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
+		WHERE stats=2
+	</select>
+	
+	<select id="statListBox3" parameterType="string" resultType="com.spring_boot.projectTeam.model.mybookVO">
+		SELECT mybook.memId, bookInfo.bookName, bookInfo.bookAuthor 
+		FROM mybook 
+		INNER JOIN bookInfo 
+		ON mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
+		WHERE stats=3
+	</select>
+
+	<select id="requestallList" parameterType="string" resultType="com.spring_boot.projectTeam.model.RequestVO">
+		SELECT bookinfo.bookId, request.applicant, request.reText, bookInfo.bookName FROM bookInfo
+		INNER JOIN request ON request.bookId=bookInfo.bookId WHERE bookinfo.memId=#{memId};
+	</select>
+	
+	<insert id="requestInsert" parameterType="hashmap">
+		INSERT INTO request (bookId, applicant, reText)
+		VALUES (#{bookId}, #{memId}, "대여 요청")
+	</insert>
+	
+	<delete id="requestDelete" parameterType="hashmap">
+		DELETE FROM request WHERE bookId=#{bookId} AND applicant=#{applicant}
+	</delete>
+	
+	<insert id="borrowInsert" parameterType="hashmap">
+		INSERT INTO borrow (bookId, giver, giveNo, taker, takeNo)
+		VALUES (#{bookId},#{memId}, 0, #{applicant}, 0)
+	</insert>
+  
+  	<delete id="requestallDelete" parameterType="string">
+		DELETE FROM request WHERE bookId=#{bookId}
+	</delete>
+	
+	<select id="tradeGiver" parameterType="string" resultType="com.spring_boot.projectTeam.model.BorrowVO">
+		SELECT borrow.taker, bookInfo.bookName, borrow.giveNo, borrow.takeNo, bookInfo.bookId
+		FROM borrow
+		INNER JOIN bookInfo
+		ON borrow.giver=#{memId} AND borrow.bookId=bookInfo.bookId
+	</select>
+	
+	<select id="tradeTaker" parameterType="string" resultType="com.spring_boot.projectTeam.model.BorrowVO">
+		SELECT borrow.giver, bookInfo.bookName, borrow.giveNo, borrow.takeNo, bookInfo.bookId
+		FROM borrow
+		INNER JOIN bookInfo
+		ON borrow.taker=#{memId} AND borrow.bookId=bookInfo.bookId
+	</select>
+	
+</mapper>

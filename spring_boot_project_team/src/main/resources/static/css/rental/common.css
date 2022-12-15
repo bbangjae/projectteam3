@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* common.css*/
+
+*{margin:0; padding:0}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#wrap{
+   font-family: 'BMDOHYEON';
+   margin:0px auto;
+   width:1280px;
+   height:100%;
+   text-align:center;
+  
+   
+}
+
+
+#headerpanel{
+   position:fixed;
+   width:1280px;
+   height:100px;
+   z-index:1000;
+   background:white;
+   
+   
+}
+
+#header{
+    width:1280px;
+    height:100px;
+    margin:0 auto;
+    
+}
+
+#headerBox{
+   
+    
+   margin:0px auto;
+   position:fixed;
+   width:800px;
+   height:100px;
+   border:solid 0px white;
+   text-align:center;
+   
+   background:white;
+}
+
+#footerBox{
+	
+	width:800px;
+	height:100px;
+	margin:3020px 0 0 150px;
+	z-index:100000;
+}
+

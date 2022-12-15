@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.spring_boot.projectTeam.dao.IMemberDAO">
+  	
+  	
+  	<!-- 암호화한 후 로그인 확인 -->
+  	<select id="loginCheck" parameterType="hashmap" resultType="string">
+  		SELECT memPw FROM members WHERE memId=#{id} 
+  	</select>
+  	
+  	<!-- 회원 등록 아직 미완 -->
+  	<insert id="insertMember" >
+  		INSERT INTO members(memId, memPw, memName, memNick, memPhone, memAddress, memAddress2, memEmail)
+  		VALUES(#{memId}, #{memPw}, #{memName}, #{memNick}, #{memPhone}, #{memAddress}, #{memAddress2}, #{memEmail})
+  	</insert>
+  	
+  	
+  </mapper>
+  

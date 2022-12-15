@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.spring_boot.projectTeam.dao.IBorrowDAO">
+        
+<!-- 북리스트 출력-->
+<select id="borrowList" parameterType="string" resultType="com.spring_boot.projectTeam.model.BorrowVO">
+
+SELECT m.memNick, mi.points, mi.coin, mi.levels, b.bookId , bi.bookName , bi.memId , bi.bookAuthor,
+	bi.bookPublish , bi.bookPrice , bi.rentP, b.giver, b.giveNo, b.taker, b.takeNo, b.bdate
+FROM members m, memInfo mi, bookInfo bi, borrow b
+WHERE b.bookId=#{bookId} AND bi.bookId=b.bookId AND bi.memId=m.memId AND m.memId=mi.memId
+
+  </select>
+     
+
+</mapper>   

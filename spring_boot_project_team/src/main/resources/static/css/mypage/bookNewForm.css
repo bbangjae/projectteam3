@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+#mainwrap{
+	padding-top: 150px;
+	margin:2px auto;	
+}
+#addnewbook{
+	margin:0px auto;		
+}
+#addnewbook th{
+	width:95px;
+	text-align: left;
+	padding-top:5px;
+	font-weight: initial;
+}
+#backcolorfill{
+	background-color: rgb(245, 246, 247);
+	margin-top: 420px;
+
+}

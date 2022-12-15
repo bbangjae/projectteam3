@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.spring_boot.projectTeam.dao.IBookInfoDAO_bj">
+  	<resultMap id="bookResult" type="com.spring_boot.projectTeam.model.BookInfoVO_b" >
+  	
+  		<result property="bookId"  column="bookId"  />
+  		<result property="memId"  column="memId"  />
+  		<result property="bookName"  column="bookName"  />
+  		<result property="bookAuthor"  column="bookAuthor"  />
+  		<result property="bookPrice"  column="bookPrice"  />
+  		<result property="bookDate"  column="bookDate"  />
+  		<result property="bookctg"  column="bookctg"  />
+  		<result property="bookImg"  column="bookImg"  />
+  		<result property="bookDis"  column="bookDis"  />
+  	
+  	</resultMap>
+  		
+   <!--  책 상세 조회 page: bNo 전달받아서 bookVO 정보 전달-->
+	<select id="detailViewBook" parameterType="string"
+   							resultType="com.spring_boot.projectTeam.model.BookInfoVO_b">
+	
+  		SELECT * FROM bookinfo WHERE bookId=#{bookId}
+  		
+  	</select> 
+  	<!-- bookview 가져오기 -->
+  	<select id="howManyLook" parameterType="string"
+   							resultType="com.spring_boot.projectTeam.model.BookViewVO">
+  							
+  		SELECT * FROM bookview WHERE bookId=#{bookId}						
+  	</select>
+	
+  	</mapper>	
+  		
+  		
+  		
+  	
