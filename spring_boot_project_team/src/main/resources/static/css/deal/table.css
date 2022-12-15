@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+#dealtable{
+	
+	width:800px;
+	height:800px;
+	
+	
+}
+
+
+#dealtable th{
+	width:150px;
+	height:100px;
+	
+	}
+
+
+#dealtable td{
+	
+	text-align:left;
+	width:650px;
+	float:left;
+	padding:20px 20px 20px 20px;
+	/* border-bottom:solid 1px black; */
+	
+}
+#dealtable td img{
+	
+	float:left;
+	width:100px;
+	height:100px;
+	margin-right:10px;
+}
+#dealtable td div{
+	
+	
+	width:100px;
+	height:100px;
+	float:left;
+	border:solid 3px red;
+	margin-right:10px;
+	inline-height:0px;
+}
+
+#dealtable td div:nth-child(2){
+	width:400px;
+	margin-right:10px;
+}
+#dealtable td div input{
+	margin-bottom:10px;
+}

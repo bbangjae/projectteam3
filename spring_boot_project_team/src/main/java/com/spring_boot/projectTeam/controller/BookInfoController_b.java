@@ -34,4 +34,9 @@ public class BookInfoController_b {
 		
 		return "book/bookDetailView";
 	}
+	@RequestMapping("/book/bookdealView/")
+	public String bookDeal() {
+		
+		return "book/bookdealView";
+	}
 }
