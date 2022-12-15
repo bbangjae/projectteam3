@@ -46,7 +46,7 @@
 		FROM mybook 
 		INNER JOIN bookInfo 
 		ON mybook.memId=bookInfo.memId AND mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
-		WHERE stats=1	
+		WHERE stats=2
 	</select>
 	
 	<select id="statListBox3" parameterType="string" resultType="com.spring_boot.projectTeam.model.mybookVO">
@@ -54,10 +54,18 @@
 		FROM mybook 
 		INNER JOIN bookInfo 
 		ON mybook.memId=bookInfo.memId AND mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
-		WHERE stats=2
+		WHERE stats=3
 	</select>
 
-
+	<select id="requestallList" parameterType="string" resultType="com.spring_boot.projectTeam.model.RequestVO">
+		SELECT bookinfo.bookId, request.applicant, request.reText, bookInfo.bookName FROM bookInfo
+		INNER JOIN request ON request.bookId=bookInfo.bookId WHERE bookinfo.memId=#{memId};
+	</select>
+	
+	<insert id="requestInsert" parameterType="hashmap">
+		INSERT INTO request (bookId, applicant, reText)
+		VALUES (#{bookId}, #{memId}, "대여 요청")
+	</insert>
 
   
 </mapper>
