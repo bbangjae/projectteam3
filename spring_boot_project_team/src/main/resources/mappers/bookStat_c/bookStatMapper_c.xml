@@ -45,7 +45,7 @@
 		SELECT mybook.memId, bookInfo.bookName, bookInfo.bookAuthor 
 		FROM mybook 
 		INNER JOIN bookInfo 
-		ON mybook.memId=bookInfo.memId AND mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
+		ON mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
 		WHERE stats=2
 	</select>
 	
@@ -53,7 +53,7 @@
 		SELECT mybook.memId, bookInfo.bookName, bookInfo.bookAuthor 
 		FROM mybook 
 		INNER JOIN bookInfo 
-		ON mybook.memId=bookInfo.memId AND mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
+		ON mybook.memId=#{memId} AND mybook.bookId=bookInfo.bookId 
 		WHERE stats=3
 	</select>
 
