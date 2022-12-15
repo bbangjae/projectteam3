@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>독서관</title>
+		<title>book 디테일 페이지</title>
 		<c:import url="/WEB-INF/views/layout/head.jsp" />
 		<link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/bookList.css"/>'>
 		<link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/common.css"/>'>
