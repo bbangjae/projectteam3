@@ -45,34 +45,23 @@ body{
    
 }
 
-
-#inspire{
-   margin:0px auto;
-   width:1280px;
-   height:100px;
-   background-color:rgb(174, 165, 157);
-   padding-top:50px;
-   margin-top:50px;
-   border:solid 1px black;
-   border-bottom:solid 0px black;
-}
 #mainmentback{
 	background-color: rgb(226, 223, 220) ;
-	height:800px;
+	height:600px;
 }
 #ourment{
 	width: 1280px;
-    margin: 200px auto 0px auto;
+    margin: 170px auto 0px auto;
     text-align: left;
 }
 #mainment{
-	font-size:40px;
-	margin-top: 15px;
+	font-size:30px;
+	margin-top: 12px;
 	margin-left: 25px;
-    padding-top: 250px;
+    padding-top: 200px;
 }
 #mainmenttitle{
-	font-size: 90px;	
+	font-size: 70px;	
 	font-family: 'GmarketSans';
 	url:('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf');
 	font-weight: lighter;
@@ -81,7 +70,7 @@ body{
 	letter-spacing: -2.4px;
 }
 #mainsubment{
-	font-size:21px;
+	font-size:15px;
 	margin-left:74px;	
 	margin-top: 30px;
     line-height: 1.8;
@@ -100,9 +89,20 @@ body{
     margin-right: -80px;
 }
 img#mentbooklist{
-	width:220px;
-	height:280px;
+	width:200px;
+	height:260px;
 	border: 1px solid rgb(226, 223, 220);
     border-radius: 20%	
 }
+#mypageimagesec{
+	background: #f5f6f7;
+	width:100%;
+	height: 700px;
+}
+#mypageimage{
+	width:500px;
+	height:400px;
+	padding-top:150px;
+}
+
  
