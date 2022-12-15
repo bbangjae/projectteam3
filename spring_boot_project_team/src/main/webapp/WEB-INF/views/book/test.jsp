@@ -14,7 +14,6 @@ else {hide.style.display='none';show.innerText='+ 내용펼치기'}">+ 내용펼
 <div id="hide" style="display: none">
 펼치기 눌렀을 때 출력할 내용 
 </div>
-	<div id="requestBox">
 		<div id="requestOK">
 				<table border="1">
 					<tr>
@@ -43,7 +42,6 @@ else {hide.style.display='none';show.innerText='+ 내용펼치기'}">+ 내용펼
 	            </tr>
 			</c:forEach>
 		</table>
-		</div>
 		<hr>
 		<table border="1">
 			<c:forEach var="taker" items="${tradeTaker }">
