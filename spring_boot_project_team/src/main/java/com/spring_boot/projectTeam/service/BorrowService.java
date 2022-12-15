@@ -1,5 +1,7 @@
 package com.spring_boot.projectTeam.service;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -15,9 +17,9 @@ public class BorrowService implements IBorrowService {
 	
 	
 	@Override
-	public BorrowVO borrowList(String bookId) {
+	public ArrayList<BorrowVO> borrowList(String memId) {
 		
-		return dao.borrowList(bookId);
+		return dao.borrowList(memId);
 	}
 
 }
