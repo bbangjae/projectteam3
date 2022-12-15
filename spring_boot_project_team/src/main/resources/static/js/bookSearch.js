@@ -4,9 +4,10 @@
 
  $(document).ready(function(){
  	$('#bookSearchFrm').on('submit', function(){ 	
- 	
- 		event.preventDefault(); 		
- 		document.getElementByld("bookallList").style.display="none";
+ 		
+ 		event.preventDefault(); 
+ 				
+ 		document.getElementById("bookAllList").style.display="none";
 
  		var formData = $(this).serialize();
 

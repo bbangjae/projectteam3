@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+#wrap{
+	text-align:center;
+}
+
+.bookSearchForm{
+	align:center;
+	text-align:center;
+	width:800px;
+	hight:1000px;
+}
+
+#rentalBookBox{
+	align:center;
+}
+#imgBox{
+	width:300px;
+	hight:800px;
+}

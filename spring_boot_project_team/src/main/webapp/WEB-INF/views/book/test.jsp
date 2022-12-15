@@ -8,6 +8,12 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
+	<a href=#none id="show" style="position: relative; z-index: 2;" onclick="if(hide.style.display=='none') {hide.style.display='';show.innerText='- 내용접기'} 
+else {hide.style.display='none';show.innerText='+ 내용펼치기'}">+ 내용펼치기</a>
+
+<div id="hide" style="display: none">
+펼치기 눌렀을 때 출력할 내용 
+</div>
 	<div id="requestBox">
 		<div id="requestOK">
 				<table border="1">

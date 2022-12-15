@@ -8,6 +8,7 @@
 <title>상품 검색</title>
 <link rel="stylesheet" type="text/css"
 	href='<c:url value="/css/search/search.css"/>'>
+	<link rel="stylesheet" type="text/css" href='<c:url value="/css/rental/rentalpage.css"/>'>
 <c:import url="/WEB-INF/views/layout/head.jsp" />
 <script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
 <script src="<c:url value='/js/bookSearch.js'/>"></script>
@@ -33,25 +34,34 @@
 			</div>
 		</div>
 		<div id="bookAllList">
-				<h3>전체 상품 조회</h3>
-				<table border="1">
-					<tr>
-						<th>상품번호</th>
-						<th>상품명</th>
-						<th>가격</th>
-						<th>제조사</th>
-						<th>재고</th>
-					</tr>
+				<h3>전체 대여 목록</h3>
+				
 					<c:forEach var="bk" items="${bookAllList }">
+					<div id="rentalBookBox">
+					<table border="1" class="bookSearchForm">
 			            <tr>
-			               <td><a href="<c:url value='/'/>" >${bk.bookId }</a></td>
-			               <td>${bk.bookName }</td>
-			               <td>${bk.bookName }</td>
-			               <td>${bk.bookName }</td>
-			               <td>${bk.bookName }</td>			               
+			               <td rowspan="5" id="imgBox">
+								<img alt="이미지가 없습니다" src="<%-- <c:url value='${bk.bookImg}'/> --%>">
+			               </td>
+			               <td><a href="<c:url value='/book/bookDetailView/${bk.bookId}'/>">제목 :${bk.bookName }</a></td>
 			            </tr>
+			            <tr>
+			                <td>저자 / 출편사 :${bk.bookAuthor } / ${bk.bookPublish }</td>             
+			            </tr>
+			            <tr>
+			                <td>원가 / 대여료 : ${bk.bookPrice } / ${bk.rentP }</td>             
+			            </tr>
+			            <tr>
+			                <td>카테고리 : ${bk.bookctg }</td>             
+			            </tr>
+			            <tr>
+			                <td>${bk.bookDis }</td>             
+			            </tr>
+			            </table>
+			            </div>
+			            <br><hr><br>
 			         </c:forEach>
-				</table>
+				
 			</div>
 		<!-- 검색 결과 출력  -->
 		<div id="searchResultBox"></div>

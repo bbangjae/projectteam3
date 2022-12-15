@@ -23,9 +23,6 @@
 						<td id="imageBox">
 							<input type="file" id="uploadFile" name="uploadFile">
 						</td>
-						<td>	
-							<input type="submit" value="업로드">
-						</td>
 					</tr>
 					<tr><th>도서 제목 :</th><td colspan="2"><input type="text"name="bookName" size="35"></td></tr>
 					<tr><th>저자 :</th><td colspan="2"><input type="text"name="bookAuthor" size="35"></td></tr>
