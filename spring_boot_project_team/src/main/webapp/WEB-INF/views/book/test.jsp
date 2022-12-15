@@ -23,6 +23,28 @@
 	            </tr>
 			</c:forEach>
 		</table>
+		<hr>
+		<table>
+			<c:forEach var="giver" items="${tradeGiver }">
+	            <tr>
+					<td>${giver.taker }</td>
+	               	<td>${giver.bookName }</td>
+	              	<td>${giver.giveNo }</td>
+	              	<td>${giver.takeNo }</td>		               
+	            </tr>
+			</c:forEach>
+		</table>
+		<hr>
+		<table>
+			<c:forEach var="taker" items="${tradeTaker }">
+	            <tr>
+					<td>${taker.giver }</td>
+	               	<td>${taker.bookName }</td>
+	              	<td>${taker.giveNo }</td>
+	              	<td>${taker.takeNo }</td>		               
+	            </tr>
+			</c:forEach>
+		</table>
 			         <a href="<c:url value="/request/insert/${book.bookId}"/>"><button>요청하기</button></a>
 	</body>
 </html>

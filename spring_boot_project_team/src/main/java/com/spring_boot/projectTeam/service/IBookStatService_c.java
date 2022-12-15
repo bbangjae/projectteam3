@@ -1,9 +1,9 @@
 package com.spring_boot.projectTeam.service;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import com.spring_boot.projectTeam.model.BookInfoVO_b;
+import com.spring_boot.projectTeam.model.BorrowVO;
 import com.spring_boot.projectTeam.model.RequestVO;
 
 public interface IBookStatService_c {
@@ -17,4 +17,6 @@ public interface IBookStatService_c {
 	public void requestInsert(String memId, String bookId);
 	public void borrowInsert(String bookId, String applicant, String memId);
 	public void requestDelete(String bookId, String applicant);
+	public ArrayList<BorrowVO> tradeGiver(String giver);
+	public ArrayList<BorrowVO> tradeTaker(String taker);
 }

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.spring_boot.projectTeam.dao.IBookStatDAO_c;
 import com.spring_boot.projectTeam.model.BookInfoVO_b;
+import com.spring_boot.projectTeam.model.BorrowVO;
 import com.spring_boot.projectTeam.model.RequestVO;
 
 @Service
@@ -95,6 +96,20 @@ public class BookStatService_c implements IBookStatService_c {
 		
 		dao.requestDelete(map);
 		
+	}
+
+
+	@Override
+	public ArrayList<BorrowVO> tradeGiver(String giver) {
+		
+		return dao.tradeGiver(giver);
+	}
+
+
+	@Override
+	public ArrayList<BorrowVO> tradeTaker(String taker) {
+		
+		return dao.tradeTaker(taker);
 	}
 
 
