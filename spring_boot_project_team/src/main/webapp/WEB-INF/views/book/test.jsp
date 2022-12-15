@@ -8,23 +8,26 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<table>
-			<tr>
-				<th>책 제목</th>
-               	<th>요청자</th>
-              	<th colspan="2"></th>
-			</tr>
-			<c:forEach var="book" items="${requestList }">
-	            <tr>
-					<td>${book.bookName }</td>
-	               	<td>${book.applicant }</td>
-	              	<td><a href="<c:url value="/request/accept/${book.bookId}/${book.applicant}"/>"><button>수락</button></a></td>
-	              	<td><a href="<c:url value="/request/refuse/${book.bookId}/${book.applicant}"/>"><button>거절</button></a></td>		               
-	            </tr>
-			</c:forEach>
-		</table>
+	<div id="requestBox">
+		<div id="requestOK">
+				<table border="1">
+					<tr>
+						<th>책 제목</th>
+		               	<th>요청자</th>
+		              	<th colspan="2"></th>
+					</tr>
+					<c:forEach var="book" items="${requestList }">
+			            <tr>
+							<td>${book.bookName }</td>
+			               	<td>${book.applicant }</td>
+			              	<td><a href="<c:url value="/request/accept/${book.bookId}/${book.applicant}"/>"><button>수락</button></a></td>
+			              	<td><a href="<c:url value="/request/refuse/${book.bookId}/${book.applicant}"/>"><button>거절</button></a></td>		               
+			            </tr>
+					</c:forEach>
+				</table>
+		</div>
 		<hr>
-		<table>
+		<table border="1">
 			<c:forEach var="giver" items="${tradeGiver }">
 	            <tr>
 					<td>${giver.taker }</td>
@@ -34,8 +37,9 @@
 	            </tr>
 			</c:forEach>
 		</table>
+		</div>
 		<hr>
-		<table>
+		<table border="1">
 			<c:forEach var="taker" items="${tradeTaker }">
 	            <tr>
 					<td>${taker.giver }</td>

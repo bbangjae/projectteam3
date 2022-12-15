@@ -14,8 +14,72 @@ public class BorrowVO {
 	private Date bdate;
 	
 	private String bookName;
+	private String memNick;
+	private int levels;
+	private int points;
+	private int coin;
+	private String memId;
+	private String bookAuthor;
+	private String bookPublish;
+	private int bookPrice;
+	private int rentP;
 	
 	
+	
+	public String getMemId() {
+		return memId;
+	}
+	public void setMemId(String memId) {
+		this.memId = memId;
+	}
+	public String getMemNick() {
+		return memNick;
+	}
+	public void setMemNick(String memNick) {
+		this.memNick = memNick;
+	}
+	public int getLevels() {
+		return levels;
+	}
+	public void setLevels(int levels) {
+		this.levels = levels;
+	}
+	public int getPoints() {
+		return points;
+	}
+	public void setPoints(int points) {
+		this.points = points;
+	}
+	public int getCoin() {
+		return coin;
+	}
+	public void setCoin(int coin) {
+		this.coin = coin;
+	}
+	public String getBookAuthor() {
+		return bookAuthor;
+	}
+	public void setBookAuthor(String bookAuthor) {
+		this.bookAuthor = bookAuthor;
+	}
+	public String getBookPublish() {
+		return bookPublish;
+	}
+	public void setBookPublish(String bookPublish) {
+		this.bookPublish = bookPublish;
+	}
+	public int getBookPrice() {
+		return bookPrice;
+	}
+	public void setBookPrice(int bookPrice) {
+		this.bookPrice = bookPrice;
+	}
+	public int getRentP() {
+		return rentP;
+	}
+	public void setRentP(int rentP) {
+		this.rentP = rentP;
+	}
 	public String getBookName() {
 		return bookName;
 	}

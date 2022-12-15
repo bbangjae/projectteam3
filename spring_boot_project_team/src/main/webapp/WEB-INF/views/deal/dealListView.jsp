@@ -11,6 +11,28 @@
 	</head>
 	<body>
 		<div id="wrap">
+			
+			포인트 : ${borrowList.memNick}<br>
+			포인트 : ${borrowList.points}<br>
+			코인 : ${borrowList.coin}<br>
+			레벨 : ${borrowList.levels}<br>
+			북아이디 : ${borrowList.bookId}<br>
+			도서명 : ${borrowList.bookName}<br>
+			아이디 : ${borrowList.memId}<br>
+			저자 : ${borrowList.bookAuthor}<br>
+			출판사 : ${borrowList.bookPublish}<br>
+			가격 : ${borrowList.bookPrice}<br>
+			대여료 : ${borrowList.rentP}<br>
+			빌려주는 사람 : ${borrowList.giver}<br>
+			기브넘버 : ${borrowList.giveNo}<br>
+			빌리는 사람 : ${borrowList.taker}<br>
+			테이크넘버 : ${borrowList.takeNo}<br>
+			날짜 알아서 : ${borrowList.bdate}<br>
+			
+			
+			
+			
+			
 			<c:import url="/WEB-INF/views/layout/top.jsp" />
 				
 				<table id="dealtable" >

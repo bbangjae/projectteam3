@@ -56,7 +56,7 @@ public class BookStatController_c {
 		model.addAttribute("tradeGiver", tradeGiver);
 		model.addAttribute("tradeTaker", tradeTaker);
 		
-		return "/mypage/mypageform";
+		return "/book/test";
 	}
 	@RequestMapping("/request/insert/{bookId}")
 	public String requestinsert(@PathVariable String bookId, RequestVO vo, HttpSession session, Model model) {
