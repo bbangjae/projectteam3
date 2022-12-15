@@ -8,9 +8,9 @@
 <meta name="Viewport" content="width=device-width, initial-scale=1.0">
 <title>독서관_이달의 책 추천</title>
 
-<script src="<c:url value='js/jquery-3.6.1.min.js'/>" ></script>
+<script src="<c:url value='/js/jquery-3.6.1.min.js'/>" ></script>
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/month/recommend.css'/>">
-<script src='<c:url value="js/recommend.js"/>'> </script>
+<script src='<c:url value="/js/recommend.js"/>'> </script>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 				<!-- 페이지 제한 -->
 				<div id="panel">
 					<div id="s1" class="section">
-						<p id="t1" class="title">JAVA</p>
+						<p id="t1" class="title"><a href="<c:url value='/'/>" >JAVA</a></p>
 						<p id="o1" class="outline" >Draven as an orphan on the streets
 							of Basilich, Draven was headstrong and full of bravado,
 							frequently getting into vicious brawls with older street children
@@ -44,7 +44,7 @@
 							own...</p>
 					</div>
 					<div id="s2" class="section">
-						<h1 id="t2" class="title">HTML5</h1>
+						<h1 id="t2" class="title"><a href="<c:url value='/'/>" >HTML5</a></h1>
 						<p id="o2" class="outline"><a>Beyond the material plane, outside
 							and somehow below it, lies the unknowable abyss. It is the realm
 							of the Void, where no mortal or immortal creature may ever walk.
@@ -52,7 +52,7 @@
 							why</a></p>
 					</div>
 					<div id="s3" class="section">
-						<h1 id="t3" class="title">리액트</h1>
+						<h1 id="t3" class="title"><a href="<c:url value='/'/>" >리액트</a></h1>
 						<p id="o3" class="outline">Starbucks'website describes it as a
 							blend of "Frappuccino chips with coffee, milk and ice" that is
 							topped off "with whipped cream and a mocha drizzle to bring you
