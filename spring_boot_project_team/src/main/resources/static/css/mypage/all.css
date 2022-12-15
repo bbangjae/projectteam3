@@ -66,7 +66,7 @@ h3, h2{
 	text-align:left;
 }
 #point{
-	    font-size: 15px;
+	font-size: 15px;
 }
 
 
@@ -103,6 +103,11 @@ h3, h2{
     font-size: 15px;
     outline:none;
     border:solid 1px;
+}
+#addpointbtn{
+	background-color: rgb(174, 165, 157);
+	outline:none;
+	border:solid 1px ;
 }
 
 .rightAlign{
@@ -157,10 +162,14 @@ a:hover{
 	font-weight:bold;
 }
 #bookMa{
-	margin-left: 15%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+	width: 1280px;
+	margin: 20px auto;
 }
-#addButton{
-	position: absolute;
+#bookh3{
+	font-size: 25px;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 15%;
+    padding-top: 15px;
 }
+

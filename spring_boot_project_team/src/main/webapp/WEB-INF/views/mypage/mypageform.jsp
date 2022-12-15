@@ -3,12 +3,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>마이페이지</title>
-<link rel="stylesheet" type="text/css"
-	href='<c:url value="/css/mypage/all.css"/>'>
-<c:import url="/WEB-INF/views/layout/head.jsp" />
+	<head>
+		<meta charset="UTF-8">
+		<title>마이페이지</title>
+		<link rel="stylesheet" type="text/css" href='<c:url value="/css/mypage/all.css"/>'>
+		<c:import url="/WEB-INF/views/layout/head.jsp" />
 </head>
 <body>
 	<div id="wrap">
@@ -47,10 +46,10 @@
 		</nav>
 		<section>
 			<div id="bookMa">
-				<h2 id="bookh3">나의 도서 관리</h2>
+				<div id="bookh3">나의 도서 관리</div>
 				<div style="position: absolute; left: 1250px; top: 300px" id="point">
 					충전금액 : &nbsp 0포인트<a id="charge">+</a>
-
+					<button id="addpointbtn">포인트 충전</button>
 				</div>
 			</div>
 			<hr id="hr1">
@@ -62,8 +61,7 @@
 								<div id="onecol1">
 									<h3 class="toCenter">등록 도서</h3>
 									<button type="button" id="addButton"
-										onclick="location.href='<c:url value='/book/bookNewForm'/>'">+
-										추가 등록</button>
+										onclick="location.href='<c:url value='/book/bookNewForm'/>'">+추가 등록</button>
 								</div>
 							</div>
 						</td>
