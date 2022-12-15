@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 
 * *{margin:0; padding:0}
 @font-face {
@@ -80,7 +80,6 @@ body{
 	margin-left: 70px;
 	letter-spacing: -2.4px;
 }
-
 #mainsubment{
 	font-size:21px;
 	margin-left:74px;	
@@ -106,3 +105,4 @@ img#mentbooklist{
 	border: 1px solid rgb(226, 223, 220);
     border-radius: 20%	
 }
+ 
