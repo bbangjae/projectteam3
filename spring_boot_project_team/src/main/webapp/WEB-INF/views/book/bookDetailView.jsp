@@ -12,6 +12,8 @@
 		<link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/content.css"/>'>
 		<link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/write.css"/>'>
 		<%-- <link rel="stylesheet" type="text/css" href='<c:url value="/css/rentalpage/menu.css"/>'> --%>
+		
+		<script src="<c:url value='/js/dealListView.js'/>"></script>	
 	</head>
 	<body>
 		<div id ="wrap">
@@ -43,7 +45,7 @@
   	<hr>
   	<section>
   		<article id="contentBF">
-  		<form id="detailForm" name="detailForm">
+  		<form id="detailForm" name="detailForm" action="/deal/dealList/${bookId}">
   			<table id="cTable" >
   				<tr><th>${bk.bookName} </th></tr>
   				<tr><td class="c1">저자:${bk.bookAuthor } / 출판사: ${bk.bookPublish }</td></tr>
