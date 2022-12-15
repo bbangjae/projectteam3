@@ -60,30 +60,26 @@
 						<tr>
 							<td id="onecol">
 								<div id="padleft">
-									<div id="onecol1" ><h3 class="toCenter" >등록된 도서</h3>
+									<div id="onecol1" ><h3 class="toCenter" >등록한 도서</h3>
 									<button type="button"  id="addButton" onclick="location.href='<c:url value='/book/bookNewForm'/>'">+ 추가 등록</button>
 								</div>
 								</div>
 							</td>
 							<td id="twocol">
-								<div id="padright"><h3 class="toCenter">빌려준 도서</h3></div>
+								<div id="padright"><h3 class="toCenter">대여중인 도서</h3></div>
 							</td>
 						</tr>
 						<tr>
 							<td id="registBox" class="myAlign">
 								<div id="regcolor">
-									<div id="reg1" class="TAD">
-										<div id="tt"class="RowAlign">
-											<span class="regist"> ● 모던 자바스크립트 입문</span>
-											<span class="rightAlign"><a href="#" class="trade">[거래 및 삭제]</a></span>
+									<c:forEach var="book" items="${statListBox1 }"><!--  -->
+										<div id="reg1" class="TAD">
+											<div id="tt"class="RowAlign">
+													<span class="regist"> ● ${book.bookName }    </span>
+													<span class="rightAlign"><a href="#" class="trade">[거래 및 삭제]</a></span>
+											</div>
 										</div>
-									</div>
-									<div id="reg2" class="TAD">
-										<div class="RowAlign">
-											<span class="regist"> ● Java의 정석</span>
-											<span class="rightAlign"><a href="#">[거래 및 삭제]</a></span>
-										</div>
-									</div>
+         							</c:forEach>
 								</div>
 							</td>
 							<td id="rentalBox" class="myAlign">
@@ -117,17 +113,20 @@
 						</tr>
 					</table>
 					<!-- ---------------------데이터 나옴----------------------- -->
-					<table border="1">
-					<c:forEach var="book" items="${statListBox1 }">
+<%-- 					<c:forEach var="book" items="${statListBox1 }"><!--  -->
+						${book.bookName }             
+			         </c:forEach> --%>
+<%--       					<table border="1">
+					<c:forEach var="book" items="${statListBox1 }"><!--  -->
 			            <tr>
 			               <td><a href="<c:url value='/'/>" >${book.bookAuthor }</a></td>
 			               <td>${book.bookName }</td>
-			               <td>${book.bookName }</td>
+			               <td>${book.book }</td>
 			               <td>${book.bookName }</td>
 			               <td>${book.bookName }</td>			               
 			            </tr>
 			         </c:forEach>
-			         </table>
+			         </table> --%>
 			         <table border="1">
 			         <c:forEach var="book1" items="${statListBox2 }">
 			            <tr>
