@@ -8,9 +8,11 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring_boot.projectTeam.model.BookInfoVO_b;
+import com.spring_boot.projectTeam.model.RequestVO;
 import com.spring_boot.projectTeam.model.mybookVO;
 import com.spring_boot.projectTeam.service.BookStatService_c;
 
@@ -21,7 +23,7 @@ public class BookStatController_c {
 	BookStatService_c service;
 	
 	@RequestMapping("/mypage/mypageform")
-	public String BookStatList(Model model, mybookVO vo, HttpSession session) {
+	public String BookStatList(Model model, mybookVO vo, HttpSession session, RequestVO request) {
 
 		String memId = (String)session.getAttribute("sid"); 
 		vo.setMemId(memId);
@@ -41,6 +43,21 @@ public class BookStatController_c {
 		model.addAttribute("statListBox2", statListBox2);
 		model.addAttribute("statListBox3", statListBox3);
 		
+		// 마이페이지 요청 조회
+		request.setMemId(memId);
+		ArrayList<RequestVO> requestList = service.requestallList(memId);
+		model.addAttribute("requestList", requestList);
+		
 		return "mypage/mypageform";
 	}
+	@RequestMapping("/request/insert/{bookId}")
+	public String requestinsert(@PathVariable String bookId, RequestVO vo, HttpSession session, Model model) {
+		
+		String memId = (String)session.getAttribute("sid");
+		
+		service.requestInsert(memId, bookId);
+		
+		return "redirect:/book/bookDetailView/{bookId}";
+	}
+	
 }
