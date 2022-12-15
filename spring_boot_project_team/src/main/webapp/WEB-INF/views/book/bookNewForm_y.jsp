@@ -21,7 +21,7 @@
 					<tr>
 						<th>이미지 : </th>
 						<td id="imageBox">
-							<input type="file" id="uploadFile" name="uploadFile">
+							<input type="file" id="uploadFile" name="bookImg">
 						</td>
 					</tr>
 					<tr><th>도서 제목 :</th><td colspan="2"><input type="text"name="bookName" size="35"></td></tr>
