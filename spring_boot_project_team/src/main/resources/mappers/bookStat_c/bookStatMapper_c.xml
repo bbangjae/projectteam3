@@ -66,6 +66,17 @@
 		INSERT INTO request (bookId, applicant, reText)
 		VALUES (#{bookId}, #{memId}, "대여 요청")
 	</insert>
-
+	
+	<delete id="requestDelete" parameterType="hashmap">
+		DELETE FROM request WHERE bookId=#{bookId} AND applicant=#{applicant}
+	</delete>
+	
+	<insert id="borrowInsert" parameterType="hashmap">
+		INSERT INTO borrow (bookId, giver, giveNo, taker, takeNo)
+		VALUES (#{bookId},#{memId}, 0, #{applicant}, 0)
+	</insert>
   
+  	<delete id="requestallDelete" parameterType="string">
+		DELETE FROM request WHERE bookId=#{bookId}
+	</delete>
 </mapper>

@@ -74,6 +74,34 @@ public class BookStatService_c implements IBookStatService_c {
 		dao.requestInsert(map);
 	}
 
+	
+	@Override
+	public void borrowInsert(String bookId, String applicant, String memId) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("bookId", bookId);
+		map.put("applicant", applicant);
+		map.put("memId", memId);
+		
+		dao.borrowInsert(map);
+		dao.requestallDelete(bookId);
+	}
+
+
+	@Override
+	public void requestDelete(String bookId, String applicant) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("bookId", bookId);
+		map.put("applicant", applicant);
+		
+		dao.requestDelete(map);
+		
+	}
+
+
+	
+
+
+
 
 
 }

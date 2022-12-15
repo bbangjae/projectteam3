@@ -79,7 +79,6 @@ public class BookController_y {
 		
 		service.insertBook(book);
 		service.insertMyBook(vo);
-		service.insertBorrow(borrow);
 		
 		
 		return "redirect:/mypage/mypageform";
