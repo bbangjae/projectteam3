@@ -1,6 +1,7 @@
  package com.spring_boot.projectTeam.service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.spring_boot.projectTeam.dao.IBookStatDAO_c;
 import com.spring_boot.projectTeam.model.BookInfoVO_b;
+import com.spring_boot.projectTeam.model.RequestVO;
 
 @Service
 public class BookStatService_c implements IBookStatService_c {
@@ -55,5 +57,23 @@ public class BookStatService_c implements IBookStatService_c {
 		// TODO Auto-generated method stub
 		return dao.statListBox3(memId);
 	}
+
+
+	@Override
+	public ArrayList<RequestVO> requestallList(String memId) {
+		
+		return dao.requestallList(memId);
+	}
+
+
+	@Override
+	public void requestInsert(String memId, String bookId) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("memId", memId);
+		map.put("bookId", bookId);
+		dao.requestInsert(map);
+	}
+
+
 
 }

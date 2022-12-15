@@ -82,7 +82,7 @@ public class BookController_y {
 		service.insertBorrow(borrow);
 		
 		
-		return "/mypage/mypageform";
+		return "redirect:/mypage/mypageform";
 	}
 	
 }

@@ -17,7 +17,7 @@
   		<result property="bookDis"  column="bookDis"  />
   	</resultMap>
   	
-	<!-- 전체 상품 조회 -->
+	<!-- 전체 도서 조회 -->
 	<select id="listAllBook" resultMap="bookResult">
 		SELECT * FROM bookInfo ORDER BY bookId
 	</select>

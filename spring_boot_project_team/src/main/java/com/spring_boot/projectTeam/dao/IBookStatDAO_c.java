@@ -1,8 +1,10 @@
 package com.spring_boot.projectTeam.dao;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.spring_boot.projectTeam.model.BookInfoVO_b;
+import com.spring_boot.projectTeam.model.RequestVO;
 
 public interface IBookStatDAO_c {
 	public int statList0(String memId); // 보유 중 도서 확인
@@ -11,4 +13,7 @@ public interface IBookStatDAO_c {
 	public ArrayList<BookInfoVO_b> statListBox1(String memId);
 	public ArrayList<BookInfoVO_b> statListBox2(String memId);
 	public ArrayList<BookInfoVO_b> statListBox3(String memId);
+	public ArrayList<RequestVO> requestallList(String memId); // 요청 목록 보기
+	public void requestInsert(HashMap<String, Object> map);
+	
 }
