@@ -12,14 +12,14 @@
 		$('#listPanel').animate({'left': moveLeft}, 'slow');
 	}
 	
-	$('#pButton').on('click', function(){
+	$('#nButton').on('click', function(){
 		if(movedIndex !=0)  
 			movedIndex = movedIndex - 1; 
 		
 		moveSlide(movedIndex);  
 	});	
 	
-	$('#nButton').on('click', function(){
+	$('#pButton').on('click', function(){
 		if(movedIndex != 4)  
 			movedIndex = movedIndex + 1; 
 		

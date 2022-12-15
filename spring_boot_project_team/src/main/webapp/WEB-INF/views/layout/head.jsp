@@ -3,7 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
    
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/common.css"/>'>
-<link rel="stylesheet" type="text/css" href='<c:url value="/css/main/slideshow.css"/>'>
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/tab.css"/>'>
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/bookLent.css"/>'>
 <link rel="stylesheet" type="text/css" href='<c:url value="/css/main/listBook.css"/>'>
